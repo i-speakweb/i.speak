@@ -12,3 +12,6 @@ Sitio web de iSpeak
 
 ## -- UPDATE 1.1
 
+- Se agregan estilos al header
+- Creo dentro del main la seccion Presentacion y agrego fondo, información e imagen
+
