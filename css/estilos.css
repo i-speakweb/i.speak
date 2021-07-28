@@ -2,3 +2,128 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+header {
+  background-color: #000027;
+  font-family: "Barlow", sans-serif;
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Finaliza menu hamburguesa */ }
+  header .logo {
+    width: auto;
+    height: 5vh;
+    padding-left: 70px;
+    padding-top: 5px; }
+  header nav {
+    height: 100%;
+    background-color: #000027;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-right: 20px;
+    /* Esto es para el menu hamburguesa en mobile */ }
+    header nav label {
+      position: absolute;
+      display: none;
+      top: 0;
+      right: 0;
+      height: 70px;
+      width: 70px;
+      background: #000027;
+      cursor: pointer;
+      z-index: 1; }
+    header nav > label > span {
+      display: block;
+      margin: 4px auto;
+      height: 4px;
+      width: 25px;
+      border-radius: 1px;
+      background: #e3e0e0;
+      transition: 0.5s; }
+      header nav > label > span:nth-child(1) {
+        margin-top: 40px; }
+  header a {
+    list-style: none;
+    text-decoration: none;
+    color: #ede4e4; }
+    header a:hover {
+      color: #2C96FB;
+      text-decoration: none; }
+  header .menu {
+    position: relative;
+    margin-top: 6px;
+    float: right;
+    list-style-type: none;
+    transition: top 0.5s cubic-bezier(0.3, 0.1, 0.3, 0.85); }
+    header .menu li {
+      color: #ede4e4;
+      font-size: 1.4rem;
+      display: inline;
+      padding: 10px;
+      margin-right: 30px;
+      cursor: pointer; }
+  header input[type=checkbox] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px; }
+    header input[type=checkbox]:checked ~ .menu {
+      top: 0; }
+    header input[type=checkbox]:checked ~ label span {
+      background: #fff; }
+      header input[type=checkbox]:checked ~ label span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg); }
+      header input[type=checkbox]:checked ~ label span:nth-child(2) {
+        opacity: 0; }
+      header input[type=checkbox]:checked ~ label span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg); }
+
+main #presentacion {
+  height: 90vh;
+  background-image: url(../img/fondoPrincipal.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  main #presentacion .contenidoPresentacion {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    main #presentacion .contenidoPresentacion .textoPresentacion {
+      height: 70%;
+      padding-left: 10rem; }
+      main #presentacion .contenidoPresentacion .textoPresentacion p {
+        color: #ffff;
+        font-family: "Barlow", sans-serif;
+        font-size: 1.5rem; }
+      main #presentacion .contenidoPresentacion .textoPresentacion h1 {
+        color: #5DF99C;
+        font-family: "Roboto", sans-serif;
+        font-size: 3rem;
+        letter-spacing: 0.2rem;
+        padding-top: 1rem; }
+        main #presentacion .contenidoPresentacion .textoPresentacion h1 span {
+          color: #2C96FB; }
+      main #presentacion .contenidoPresentacion .textoPresentacion h3 {
+        color: #ffff;
+        font-family: "Barlow", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding-top: 2rem; }
+      main #presentacion .contenidoPresentacion .textoPresentacion p {
+        padding-top: 3rem; }
+        main #presentacion .contenidoPresentacion .textoPresentacion p .botonVerCursos {
+          font-family: "Barlow", sans-serif;
+          font-weight: 600;
+          font-size: 1.3rem;
+          text-decoration: none;
+          color: #000027;
+          background-color: #5DF99C;
+          padding: 0.8rem;
+          border-radius: 5px; }
+    main #presentacion .contenidoPresentacion .imagenPresentacion img {
+      width: 800px;
+      height: 500px; }
