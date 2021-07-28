@@ -1,3 +1,78 @@
+@font-face {
+  font-family: Copper Hewitt;
+  src: url("../fonts/CooperHewitt-Book.otf"); }
+
+@font-face {
+  font-family: Copper Hewitt;
+  font-weight: bold;
+  src: url("../fonts/CooperHewitt-Semibold.otf"); }
+
+@font-face {
+  font-family: Copper Hewitt;
+  font-weight: medium;
+  src: url("../fonts/CooperHewitt-Medium.otf"); }
+
+@font-face {
+  font-family: Copper Hewitt;
+  font-weight: lighter;
+  src: url("../fonts/CooperHewitt-Light.otf"); }
+
+.tarjeta {
+  width: 400px;
+  height: 760px;
+  border-radius: 10px;
+  border: 3px solid #000027; }
+  .tarjeta__titulo {
+    background-color: #000027;
+    border-radius: 10px 10px 0px 0px;
+    height: 81px;
+    width: 400px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center; }
+    .tarjeta__titulo__texto {
+      font-family: "Copper Hewitt", sans-serif;
+      color: white;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 32px;
+      padding-left: 15px; }
+    .tarjeta__titulo--negrita {
+      font-weight: 600; }
+  .tarjeta__contenedorIconos {
+    display: flex;
+    height: 90px;
+    align-items: center; }
+    .tarjeta__contenedorIconos div {
+      padding-left: 20px;
+      display: flex; }
+      .tarjeta__contenedorIconos div p {
+        font-family: "Barlow", sans-serif;
+        color: #000027;
+        font-size: 16px;
+        padding-right: 50px;
+        padding-left: 5px;
+        line-height: 19px;
+        letter-spacing: 0.06em; }
+        .tarjeta__contenedorIconos div p span {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 17px; }
+  .tarjeta__body {
+    padding: 15px;
+    font-family: "Barlow", sans-serif;
+    color: #000027;
+    letter-spacing: 0.06em; }
+    .tarjeta__body h3 {
+      font-size: 20px;
+      line-height: 24px; }
+    .tarjeta__body p {
+      font-size: 18px;
+      line-height: 26px; }
+  .tarjeta__precios {
+    display: flex;
+    flex-wrap: wrap; }
+
 * {
   margin: 0;
   padding: 0;
@@ -127,3 +202,18 @@ main #presentacion {
     main #presentacion .contenidoPresentacion .imagenPresentacion img {
       width: 800px;
       height: 500px; }
+
+main .tituloCentrado {
+  font-family: Copper Hewitt;
+  text-align: center;
+  color: #000027; }
+  main .tituloCentrado h2 {
+    font-style: bold;
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 0.05em; }
+  main .tituloCentrado p {
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px; }

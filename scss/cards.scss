@@ -1,0 +1,77 @@
+.tarjeta{
+    width: 400px;
+    height: 760px;
+    border-radius: 10px;
+    border: 3px solid $colorFondo;
+
+    &__titulo{
+        background-color: $colorFondo;
+        border-radius: 10px 10px 0px 0px;
+        height: 81px;
+        width: 400px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+
+        &__texto{
+            font-family: $fuenteGeneral;
+            color: white;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 32px;
+            padding-left: 15px;
+        }
+
+        &--negrita{
+            font-weight: 600;
+        }
+    }
+    &__contenedorIconos{
+        display: flex;
+        height: 90px;
+        align-items: center;
+        
+
+        div{
+            padding-left: 20px;
+            display: flex;
+
+            p{
+                font-family: $fuenteContenido;
+                color: $colorFondo;
+                font-size: 16px;
+                padding-right: 50px;
+                padding-left: 5px;
+                line-height: 19px; 
+                letter-spacing: 0.06em;
+
+                span{
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+            }
+        }
+    }
+    &__body{
+        padding: 15px;
+        font-family: $fuenteContenido;
+        color: $colorFondo;
+        letter-spacing: 0.06em;
+
+        h3{
+            font-size: 20px;
+            line-height: 24px;
+            
+        }
+        p{ 
+            font-size: 18px;
+            line-height: 26px;
+            
+        }
+    }
+    &__precios{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

@@ -7,3 +7,8 @@ $colorSubtitulos: #2C96FB;
 
 $fuenteTitulos: 'Roboto', sans-serif;
 $fuenteContenido: 'Barlow', sans-serif;
+@font-face { font-family: Copper Hewitt; src: url('../fonts/CooperHewitt-Book.otf'); } 
+@font-face { font-family: Copper Hewitt; font-weight: bold; src: url('../fonts/CooperHewitt-Semibold.otf');}
+@font-face { font-family: Copper Hewitt; font-weight: medium; src: url('../fonts/CooperHewitt-Medium.otf');}
+@font-face { font-family: Copper Hewitt; font-weight: lighter; src: url('../fonts/CooperHewitt-Light.otf');}
+$fuenteGeneral: 'Copper Hewitt', sans-serif;
