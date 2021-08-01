@@ -107,11 +107,52 @@
       font-weight: bold;
       font-size: 18px;
       letter-spacing: 0.06em;
-      border: 2px solid #000027; }
+      border: 2px solid #000027;
+      cursor: pointer; }
     .tarjeta__botones__botonDos {
       width: 200px;
       background: none;
       color: #000027; }
+
+.tarjetaXp {
+  margin: 70px 20px;
+  min-width: 520px;
+  width: 520px;
+  height: 354.67px;
+  background: #fff;
+  box-shadow: 5px 8px 15px rgba(93, 249, 156, 0.2);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .tarjetaXp__contenedor {
+    width: 440px; }
+    .tarjetaXp__contenedor__texto {
+      font-family: "Barlow", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.06em; }
+  .tarjetaXp__inferior {
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 440px; }
+    .tarjetaXp__inferior__icono {
+      width: 40px;
+      border-radius: 50%; }
+    .tarjetaXp__inferior__negrita, .tarjetaXp__inferior__regular {
+      font-family: "Barlow", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.06em; }
+    .tarjetaXp__inferior__regular {
+      font-weight: normal; }
 
 * {
   margin: 0;
@@ -175,12 +216,16 @@ header {
     list-style-type: none;
     transition: top 0.5s cubic-bezier(0.3, 0.1, 0.3, 0.85); }
     header .menu li {
+      font-family: "Barlow", sans-serif;
       color: #ede4e4;
       font-size: 1.4rem;
       display: inline;
       padding: 10px;
       margin-right: 30px;
       cursor: pointer; }
+    header .menu img {
+      width: 26px;
+      height: 26px; }
   header input[type=checkbox] {
     position: absolute;
     top: -9999px;
@@ -207,18 +252,37 @@ main #presentacion {
     flex-direction: row;
     justify-content: space-between;
     align-items: center; }
+    main #presentacion .contenidoPresentacion .bandaInferior {
+      position: absolute;
+      left: 1007px;
+      top: 785px;
+      background: #5DF99C;
+      width: 414px;
+      height: 34px;
+      z-index: 0;
+      mix-blend-mode: exclusion; }
+    main #presentacion .contenidoPresentacion .bandaSuperior {
+      position: absolute;
+      width: 305px;
+      height: 34px;
+      left: 1598px;
+      top: 280px;
+      background: #5DF99C; }
     main #presentacion .contenidoPresentacion .textoPresentacion {
       height: 70%;
       padding-left: 10rem; }
       main #presentacion .contenidoPresentacion .textoPresentacion p {
         color: #ffff;
         font-family: "Barlow", sans-serif;
-        font-size: 1.5rem; }
+        font-weight: 500;
+        line-height: 42px;
+        letter-spacing: 0.06em;
+        font-size: 35px; }
       main #presentacion .contenidoPresentacion .textoPresentacion h1 {
         color: #5DF99C;
-        font-family: "Roboto", sans-serif;
-        font-size: 3rem;
-        letter-spacing: 0.2rem;
+        font-family: "Copper Hewitt", sans-serif;
+        font-size: 75px;
+        letter-spacing: 0.05em;
         padding-top: 1rem; }
         main #presentacion .contenidoPresentacion .textoPresentacion h1 span {
           color: #2C96FB; }
@@ -227,7 +291,15 @@ main #presentacion {
         font-family: "Barlow", sans-serif;
         font-size: 1.5rem;
         font-weight: 400;
-        padding-top: 2rem; }
+        padding-top: 2rem;
+        padding-left: 100px; }
+      main #presentacion .contenidoPresentacion .textoPresentacion .bandaLateral {
+        background: #5DF99C;
+        position: absolute;
+        width: 58px;
+        height: 14px;
+        left: 160px;
+        top: 593px; }
       main #presentacion .contenidoPresentacion .textoPresentacion p {
         padding-top: 3rem; }
         main #presentacion .contenidoPresentacion .textoPresentacion p .botonVerCursos {
@@ -240,8 +312,10 @@ main #presentacion {
           padding: 0.8rem;
           border-radius: 5px; }
     main #presentacion .contenidoPresentacion .imagenPresentacion img {
+      position: relative;
       width: 800px;
-      height: 500px; }
+      height: 500px;
+      z-index: 5; }
 
 main .tituloCentrado {
   font-family: Copper Hewitt;
@@ -317,7 +391,8 @@ main .cursos {
           line-height: 34px;
           letter-spacing: 0.06em;
           margin-top: 60px;
-          border: none; }
+          border: none;
+          cursor: pointer; }
       main .cursos__info .infoIzq__container__img, main .cursos__info .infoDer__container__img {
         width: 620px;
         height: auto;
@@ -336,3 +411,91 @@ main .cursos {
           text-align: right;
           margin-right: 0px;
           margin-left: 150px; }
+
+main .experiencias {
+  background: #000027; }
+  main .experiencias .alumnos {
+    padding-top: 80px; }
+    main .experiencias .alumnos__cards {
+      display: flex;
+      overflow-x: hidden; }
+    main .experiencias .alumnos__titulo, main .experiencias .empresas__titulo {
+      color: #fff;
+      font-family: "Copper Hewitt", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 50px;
+      line-height: 70px;
+      text-align: center;
+      letter-spacing: 0.06em; }
+  main .experiencias .empresas {
+    padding-top: 80px; }
+    main .experiencias .empresas__cards__imagen {
+      margin: 135px 40px; }
+
+main .whatsapp {
+  position: fixed;
+  width: 320px;
+  height: 90px;
+  background: #2C96FB;
+  box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  left: 1560px;
+  top: 860px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 11px 28px 11px 24px;
+  font-family: "Barlow", sans-serif;
+  color: #FFF; }
+  main .whatsapp img {
+    width: 67.7px;
+    height: 68px; }
+  main .whatsapp div {
+    margin-left: 15px; }
+    main .whatsapp div span {
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 30px; }
+    main .whatsapp div p {
+      font-size: 12px;
+      font-style: italic;
+      line-height: 14px;
+      min-width: 190px; }
+
+footer {
+  background: #000027;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  color: #FFF;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  line-height: 22px; }
+  footer .footer__container {
+    padding-top: 80px;
+    width: 1720px;
+    height: 280px;
+    border-top: 2px solid #FFF;
+    display: flex;
+    justify-content: space-between; }
+    footer .footer__container__redes {
+      width: 350px; }
+      footer .footer__container__redes p {
+        padding-top: 20px; }
+      footer .footer__container__redes__logos {
+        padding-top: 50px;
+        width: 225px;
+        display: flex;
+        justify-content: space-between; }
+    footer .footer__container__empresa {
+      width: 400px; }
+      footer .footer__container__empresa p {
+        padding-top: 20px; }
+    footer .footer__container__staff {
+      width: 840px; }
+      footer .footer__container__staff__columnas {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between; }

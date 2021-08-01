@@ -3,7 +3,17 @@
 
 Sitio web de iSpeak
 
-## -- Update 0.4
+## -- Update 0.5 (Mayor update)
+- Se finaliza el index.html en su version estatica.
+    - Se agregan cards inferiores de experiencias de usuarios.
+    - Se agregan empresas asociadas.
+    - Se agrega footer
+    - Se agrega fixed de whatsapp
+    - Se añade sectores decorativos en main y se cambian tipografias para estar acorde a lo diseñado.
+    - Se añaden iconos de redes sociales en footer y header.
+    - Se añade en navegacion el "Acceso Alumnos"
+
+### -- Update 0.4
 - Se finaliza las cards intermedias.
 - Se añaden imagenes faltantes.
 - Se finaliza la sección Cursos:

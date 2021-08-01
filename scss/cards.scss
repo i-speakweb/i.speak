@@ -121,6 +121,7 @@
             font-size: 18px;
             letter-spacing: $interlineadoDeTexto;
             border: 2px solid $colorFondo;
+            cursor: pointer;
         }
 
         &__botonDos{
@@ -132,4 +133,60 @@
     }
 
 
+}
+
+.tarjetaXp{
+    margin: 70px 20px;
+    min-width: 520px;
+    width: 520px;
+    height: 354.67px;
+    background: #fff;
+    box-shadow: 5px 8px 15px rgba(93, 249, 156, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    &__contenedor{
+        width: 440px;
+        
+        &__texto{
+            font-family: $fuenteContenido;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: $interlineadoDeTexto;
+        }
+    }
+
+    &__inferior{
+        margin: 10px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 440px;
+
+        &__icono{
+            width: 40px;
+            border-radius: 50%;
+        }
+
+        &__negrita{
+            font-family: $fuenteContenido;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: $interlineadoDeTexto;
+        }
+
+
+        &__regular{
+            @extend .tarjetaXp__inferior__negrita;
+            font-weight: normal;
+        }
+    }
 }
