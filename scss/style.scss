@@ -1,8 +1,7 @@
 @import "variables";
 @import "animaciones";
 @import "cards";
-
-
+@import "scrollbar";
 
 
 * {
@@ -11,6 +10,9 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 // ------------ Header -------------- //
 
 header {
@@ -285,10 +287,38 @@ main {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
-        height: 2390px;
+        height: 2460px;
 
         &__contenedor{
             display: flex;
+
+            .opacity_ruler1{
+                position: absolute;
+                width: 200px;
+                height: 800px;
+                top: 0px;
+                background: linear-gradient(to right, white, transparent 90%);
+                z-index: 20;
+            }
+
+            .opacity_ruler2{
+                @extend .opacity_ruler1;
+                right: 0px;
+                background: linear-gradient(to left, white, transparent 90%);
+            }
+
+            .prev_cursos{
+                z-index: 50;
+            }
+
+            .next_cursos{
+                z-index: 50;
+            }
+            
+            .swiper-wrapper{
+                width: 100%;
+
+            }
         }
 
         &__info{
@@ -403,6 +433,14 @@ main {
                 display: flex;
                 overflow-x: hidden;
 
+                .tarjetaXp{
+                    opacity: 30%;
+                    transition: all 0.5s ease-in-out;
+                }
+
+                .tarjetaXp:hover{
+                    opacity: 100%;
+                }
             }
 
             &__titulo{
@@ -426,7 +464,7 @@ main {
             }
 
             &__cards{
-
+                
                 &__imagen{
                     margin: 135px 40px;
                 }
@@ -448,6 +486,7 @@ main {
         padding: 11px 28px 11px 24px;
         font-family: $fuenteContenido;
         color: #FFF;
+        z-index: 30;
 
         img{
             width: 67.7px;

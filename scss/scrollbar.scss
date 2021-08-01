@@ -1,0 +1,17 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px $colorSubtitulos;
+    background: $colorFondo;
+    border-radius: 1px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $colorTitulos;
+    border-radius: 1px;
+  }
