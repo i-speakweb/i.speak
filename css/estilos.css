@@ -21,12 +21,11 @@
   width: 400px;
   height: 760px;
   border-radius: 10px;
-  border: 3px solid #000027; }
+  border: 3px solid #000027;
+  margin-left: 30px; }
   .tarjeta__titulo {
     background-color: #000027;
-    border-radius: 10px 10px 0px 0px;
     height: 81px;
-    width: 400px;
     box-sizing: border-box;
     display: flex;
     align-items: center; }
@@ -62,16 +61,57 @@
     padding: 15px;
     font-family: "Barlow", sans-serif;
     color: #000027;
-    letter-spacing: 0.06em; }
+    letter-spacing: 0.06em;
+    margin-bottom: 20px; }
     .tarjeta__body h3 {
       font-size: 20px;
       line-height: 24px; }
-    .tarjeta__body p {
+    .tarjeta__body__item, .tarjeta__body__item--modificado {
+      margin-left: 20px;
       font-size: 18px;
-      line-height: 26px; }
+      line-height: 52px;
+      list-style-position: outside; }
+      .tarjeta__body__item--modificado {
+        line-height: 24px; }
   .tarjeta__precios {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin-bottom: 20px; }
+    .tarjeta__precios__item {
+      display: flex;
+      width: 160px;
+      height: 40px;
+      margin: 20px 15px; }
+      .tarjeta__precios__item__texto {
+        font-family: "Barlow", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: 0.06em;
+        padding-left: 15px; }
+      .tarjeta__precios__item__icono {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px; }
+  .tarjeta__botones {
+    width: 400px;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly; }
+    .tarjeta__botones__botonUno, .tarjeta__botones__botonDos {
+      background: #000027;
+      border-radius: 4px;
+      width: 150px;
+      height: 60px;
+      color: #Fff;
+      font-family: "Barlow", sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+      letter-spacing: 0.06em;
+      border: 2px solid #000027; }
+    .tarjeta__botones__botonDos {
+      width: 200px;
+      background: none;
+      color: #000027; }
 
 * {
   margin: 0;
@@ -212,8 +252,87 @@ main .tituloCentrado {
     font-size: 60px;
     font-weight: 600;
     letter-spacing: 0.05em; }
-  main .tituloCentrado p {
+  main .tituloCentrado__postTitulo {
     font-family: "Barlow", sans-serif;
     font-weight: 500;
     font-size: 30px;
     line-height: 36px; }
+  main .tituloCentrado__previoTarjeta {
+    color: #000027;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-family: "Barlow", sans-serif;
+    padding-left: 30px;
+    font-size: 20px;
+    text-align: left;
+    line-height: 24px;
+    letter-spacing: 0.06em; }
+
+main .cursos {
+  background-image: url(../img/green_background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 2390px; }
+  main .cursos__contenedor {
+    display: flex; }
+  main .cursos__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main .cursos__info .infoIzq {
+      margin-top: 150px;
+      display: flex; }
+      main .cursos__info .infoIzq__texto {
+        display: flex;
+        flex-direction: column; }
+        main .cursos__info .infoIzq__texto__titulo, main .cursos__info .infoDer__texto__titulo {
+          color: #000027;
+          font-family: "Copper Hewitt", sans-serif;
+          font-weight: 600;
+          font-size: 50px;
+          line-height: 70px;
+          letter-spacing: 0.06em;
+          margin-top: 20px; }
+        main .cursos__info .infoIzq__texto__parrafo, main .cursos__info .infoDer__texto__parrafo {
+          color: #000027;
+          width: 736px;
+          font-family: "Copper Hewitt", sans-serif;
+          font-weight: normal;
+          font-size: 25px;
+          line-height: 45px;
+          letter-spacing: 0.1em;
+          margin-right: 150px; }
+        main .cursos__info .infoIzq__texto__boton, main .cursos__info .infoDer__texto__boton {
+          width: 208px;
+          height: 74px;
+          background: #000027;
+          box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+          border-radius: 4px;
+          color: #5DF99C;
+          font-size: 26px;
+          font-style: normal;
+          font-family: "Copper Hewitt", sans-serif;
+          font-weight: bold;
+          line-height: 34px;
+          letter-spacing: 0.06em;
+          margin-top: 60px;
+          border: none; }
+      main .cursos__info .infoIzq__container__img, main .cursos__info .infoDer__container__img {
+        width: 620px;
+        height: auto;
+        filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+        border-radius: 10px; }
+    main .cursos__info .infoDer {
+      display: flex;
+      margin-top: 80px; }
+      main .cursos__info .infoDer__texto {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; }
+        main .cursos__info .infoDer__texto__titulo {
+          text-align: right; }
+        main .cursos__info .infoDer__texto__parrafo {
+          text-align: right;
+          margin-right: 0px;
+          margin-left: 150px; }

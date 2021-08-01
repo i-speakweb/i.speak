@@ -3,12 +3,11 @@
     height: 760px;
     border-radius: 10px;
     border: 3px solid $colorFondo;
+    margin-left: 30px;
 
     &__titulo{
         background-color: $colorFondo;
-        border-radius: 10px 10px 0px 0px;
         height: 81px;
-        width: 400px;
         box-sizing: border-box;
         display: flex;
         align-items: center;
@@ -43,7 +42,7 @@
                 padding-right: 50px;
                 padding-left: 5px;
                 line-height: 19px; 
-                letter-spacing: 0.06em;
+                letter-spacing: $interlineadoDeTexto;
 
                 span{
                     font-weight: 600;
@@ -57,21 +56,80 @@
         padding: 15px;
         font-family: $fuenteContenido;
         color: $colorFondo;
-        letter-spacing: 0.06em;
+        letter-spacing: $interlineadoDeTexto;
+        margin-bottom: 20px;
 
         h3{
             font-size: 20px;
             line-height: 24px;
             
         }
-        p{ 
+        &__item{ 
+            margin-left: 20px;
             font-size: 18px;
-            line-height: 26px;
-            
+            line-height: 52px;
+            list-style-position: outside;
+
+            &--modificado{
+                @extend .tarjeta__body__item;
+                line-height: 24px;
+            }
         }
     }
     &__precios{
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 20px;
+
+        &__item{
+            display: flex;
+            width: 160px;
+            height: 40px;
+            margin: 20px 15px;
+
+            &__texto{
+                font-family: $fuenteContenido;
+                font-weight: bold;
+                font-size: 16px;
+                letter-spacing: $interlineadoDeTexto;
+                padding-left: 15px;
+            }
+
+            &__icono{
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+            }
+        }
+
     }
+
+    &__botones{
+        width: 400px;
+        height: 60px;
+        display: flex;
+        justify-content: space-evenly;
+
+        &__botonUno{
+            background: $colorFondo;
+            border-radius: 4px;
+            width: 150px;
+            height: 60px;
+            color: #Fff;
+            font-family: $fuenteContenido;
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: $interlineadoDeTexto;
+            border: 2px solid $colorFondo;
+        }
+
+        &__botonDos{
+            @extend .tarjeta__botones__botonUno;
+            width: 200px;
+            background: none;
+            color: $colorFondo;
+        }
+    }
+
+
 }
