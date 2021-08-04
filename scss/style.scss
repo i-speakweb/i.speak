@@ -2,6 +2,7 @@
 @import "animaciones";
 @import "cards";
 @import "scrollbar";
+@import "blog";
 
 
 * {
@@ -234,6 +235,10 @@ main {
                         padding: 0.8rem;
                         border-radius: 5px;
 
+                        &:hover{
+                            color: $colorTitulos;
+                            background-color: $colorSubtitulos;
+                        }
                     }
                 }
             }
@@ -514,7 +519,7 @@ main {
 
 footer{
     background: $colorFondo;
-    height: 400px;
+    height: 350px;
     display: flex;
     justify-content: center;
     color: #FFF;

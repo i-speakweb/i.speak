@@ -1,0 +1,105 @@
+
+#contenidoBlog{
+    background-color: $colorFondo;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10rem;
+
+    .tituloBlog{
+        color: $colorTitulos;
+        font-family: $fuenteGeneral;
+        font-size: 50px;
+        letter-spacing: 0.05em;
+        padding-top: 2rem;
+    }
+
+    .grillaNoticias{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        color: rgb(244, 240, 240);
+        width: 80%;
+        margin-left: 4rem;
+        
+
+        .itemBlog{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-top: 5rem;
+        
+
+            .tituloNoticia{
+                font-family: $fuenteGeneral;
+                text-align: start;
+                font-size: 30px;
+            }
+
+            .bandaDivisoria{
+
+
+            }
+
+            .imagenBlog{
+                margin-top: 2rem;
+                width: 550px;
+                height: 350px;
+                border-radius: 10px;
+            }
+
+            .subtituloNoticia{
+                font-family: $fuenteContenido;
+                margin-top: 2rem;
+                text-align: left;
+                width: 90%;
+            }
+
+            .parrafoNoticia{
+                font-family: $fuenteContenido;
+                margin-top: 1rem;
+                text-align: left;
+                width: 90%;
+
+            }
+
+            .botonVerMas{
+                font-family: $fuenteContenido;
+                color: $colorTitulos;
+                font-weight: 600;
+                text-decoration: none;
+                text-align: left;
+                font-size: 1.3rem;
+                margin-top: 2rem;
+                width: 15%;
+                
+                &:hover{
+                    color: $colorSubtitulos;
+                }
+            }
+
+        }
+    }
+
+    .botonInglesLaboral {
+        font-family: $fuenteContenido;
+        font-weight: 600;
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: $colorFondo;
+        background-color: $colorTitulos;
+        padding: 0.8rem;
+        border-radius: 5px;
+        margin-top: 8rem;
+
+        &:hover{
+            color: $colorTitulos;
+            background-color: $colorSubtitulos;
+        }
+
+    }
+}

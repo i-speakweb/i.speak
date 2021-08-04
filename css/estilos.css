@@ -168,6 +168,78 @@
   background: #5DF99C;
   border-radius: 1px; }
 
+#contenidoBlog {
+  background-color: #000027;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10rem; }
+  #contenidoBlog .tituloBlog {
+    color: #5DF99C;
+    font-family: "Copper Hewitt", sans-serif;
+    font-size: 50px;
+    letter-spacing: 0.05em;
+    padding-top: 2rem; }
+  #contenidoBlog .grillaNoticias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #f4f0f0;
+    width: 80%;
+    margin-left: 4rem; }
+    #contenidoBlog .grillaNoticias .itemBlog {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-top: 5rem; }
+      #contenidoBlog .grillaNoticias .itemBlog .tituloNoticia {
+        font-family: "Copper Hewitt", sans-serif;
+        text-align: start;
+        font-size: 30px; }
+      #contenidoBlog .grillaNoticias .itemBlog .imagenBlog {
+        margin-top: 2rem;
+        width: 550px;
+        height: 350px;
+        border-radius: 10px; }
+      #contenidoBlog .grillaNoticias .itemBlog .subtituloNoticia {
+        font-family: "Barlow", sans-serif;
+        margin-top: 2rem;
+        text-align: left;
+        width: 90%; }
+      #contenidoBlog .grillaNoticias .itemBlog .parrafoNoticia {
+        font-family: "Barlow", sans-serif;
+        margin-top: 1rem;
+        text-align: left;
+        width: 90%; }
+      #contenidoBlog .grillaNoticias .itemBlog .botonVerMas {
+        font-family: "Barlow", sans-serif;
+        color: #5DF99C;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: left;
+        font-size: 1.3rem;
+        margin-top: 2rem;
+        width: 15%; }
+        #contenidoBlog .grillaNoticias .itemBlog .botonVerMas:hover {
+          color: #2C96FB; }
+  #contenidoBlog .botonInglesLaboral {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #000027;
+    background-color: #5DF99C;
+    padding: 0.8rem;
+    border-radius: 5px;
+    margin-top: 8rem; }
+    #contenidoBlog .botonInglesLaboral:hover {
+      color: #5DF99C;
+      background-color: #2C96FB; }
+
 * {
   margin: 0;
   padding: 0;
@@ -328,6 +400,9 @@ main #presentacion {
           background-color: #5DF99C;
           padding: 0.8rem;
           border-radius: 5px; }
+          main #presentacion .contenidoPresentacion .textoPresentacion p .botonVerCursos:hover {
+            color: #5DF99C;
+            background-color: #2C96FB; }
     main #presentacion .contenidoPresentacion .imagenPresentacion img {
       position: relative;
       width: 800px;
@@ -504,7 +579,7 @@ main .whatsapp {
 
 footer {
   background: #000027;
-  height: 400px;
+  height: 350px;
   display: flex;
   justify-content: center;
   color: #FFF;

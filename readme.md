@@ -3,6 +3,16 @@
 
 Sitio web de iSpeak
 
+
+## -- Update 0.7 (beta)
+- Se realiza estructura de blog.html
+- Se le agregan estilos a blog.html 
+- Se incorporan header y footer
+- Se añade texto e imágenes provisorias
+- Se modifican los links para funcionalidad
+- Se crea el archivo noticia.html
+- Se crea solo la estructura de noticia.html
+
 ## -- Update 0.6 (beta)
 - Se añade funcionalidad a los sliders mediante SwiperJs
     - Se agregan efectos a los sliders segun requerimiento UX
