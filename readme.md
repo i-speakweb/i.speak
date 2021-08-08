@@ -3,6 +3,11 @@
 
 Sitio web de iSpeak
 
+## -- Update 0.8 (beta)
+- Se desarrolla el archivo noticia.html con texto e imágenes provisorias
+- Se le agregan estilos a noticia.html
+- Se agrega responsive y menu hamburguesa al header
+
 
 ## -- Update 0.7 (beta)
 - Se realiza estructura de blog.html

@@ -19,18 +19,19 @@
     .grillaNoticias{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         flex-wrap: wrap;
         color: rgb(244, 240, 240);
-        width: 80%;
-        margin-left: 4rem;
+        width: 90%;
+       
         
 
         .itemBlog{
             width: 40%;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: center;
+            align-items: center;
             margin-top: 5rem;
         
 
@@ -38,11 +39,7 @@
                 font-family: $fuenteGeneral;
                 text-align: start;
                 font-size: 30px;
-            }
-
-            .bandaDivisoria{
-
-
+                width: 80%;
             }
 
             .imagenBlog{
@@ -56,14 +53,14 @@
                 font-family: $fuenteContenido;
                 margin-top: 2rem;
                 text-align: left;
-                width: 90%;
+                width: 80%;
             }
 
             .parrafoNoticia{
                 font-family: $fuenteContenido;
                 margin-top: 1rem;
                 text-align: left;
-                width: 90%;
+                width: 80%;
 
             }
 
@@ -72,7 +69,6 @@
                 color: $colorTitulos;
                 font-weight: 600;
                 text-decoration: none;
-                text-align: left;
                 font-size: 1.3rem;
                 margin-top: 2rem;
                 width: 15%;
@@ -102,4 +98,77 @@
         }
 
     }
+}
+
+
+/* ------------ NOTICIA EXTENDIDA ------------ */
+
+
+#noticiaExtendida{
+    background-color: $colorFondo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10rem;
+
+    .tituloNoticiaExtendida{
+        font-family: $fuenteGeneral;
+        color: rgb(233, 227, 227);
+        width: 50%;
+        text-align: start;
+        margin-top: 4rem;
+        font-size: 2.5rem;
+
+    }
+    .bandaBlog{
+        position: absolute;
+        width: 305px;
+        height: 10px;
+        right: 1130px;
+        top: 280px;
+        background: $colorTitulos;
+    }
+
+    .imgNoticiaExtendida{
+        width: 50%;
+        border-radius: 10px;
+        margin-top: 4rem;
+        
+
+    }
+
+    .subNoticiaExtendida{
+        margin: 3rem;
+        color: rgb(233, 227, 227);
+        width: 50%;
+        font-family: $fuenteContenido;
+        font-size: 1.5rem;
+    }
+
+    .pNoticiaExtendida{
+        margin: 0.5rem;
+        line-height: 1.5rem;
+        text-align: justify;
+        color: rgb(233, 227, 227);
+        width: 50%;
+        font-family: $fuenteContenido;
+    }
+
+    .botonInglesLaboral {
+        font-family: $fuenteContenido;
+        font-weight: 600;
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: $colorFondo;
+        background-color: $colorTitulos;
+        padding: 0.8rem;
+        border-radius: 5px;
+        margin-top: 8rem;
+
+        &:hover{
+            color: $colorTitulos;
+            background-color: $colorSubtitulos;
+        }
+}
 }

@@ -185,21 +185,22 @@
   #contenidoBlog .grillaNoticias {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     color: #f4f0f0;
-    width: 80%;
-    margin-left: 4rem; }
+    width: 90%; }
     #contenidoBlog .grillaNoticias .itemBlog {
       width: 40%;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: center;
+      align-items: center;
       margin-top: 5rem; }
       #contenidoBlog .grillaNoticias .itemBlog .tituloNoticia {
         font-family: "Copper Hewitt", sans-serif;
         text-align: start;
-        font-size: 30px; }
+        font-size: 30px;
+        width: 80%; }
       #contenidoBlog .grillaNoticias .itemBlog .imagenBlog {
         margin-top: 2rem;
         width: 550px;
@@ -209,18 +210,17 @@
         font-family: "Barlow", sans-serif;
         margin-top: 2rem;
         text-align: left;
-        width: 90%; }
+        width: 80%; }
       #contenidoBlog .grillaNoticias .itemBlog .parrafoNoticia {
         font-family: "Barlow", sans-serif;
         margin-top: 1rem;
         text-align: left;
-        width: 90%; }
+        width: 80%; }
       #contenidoBlog .grillaNoticias .itemBlog .botonVerMas {
         font-family: "Barlow", sans-serif;
         color: #5DF99C;
         font-weight: 600;
         text-decoration: none;
-        text-align: left;
         font-size: 1.3rem;
         margin-top: 2rem;
         width: 15%; }
@@ -237,6 +237,59 @@
     border-radius: 5px;
     margin-top: 8rem; }
     #contenidoBlog .botonInglesLaboral:hover {
+      color: #5DF99C;
+      background-color: #2C96FB; }
+
+/* ------------ NOTICIA EXTENDIDA ------------ */
+#noticiaExtendida {
+  background-color: #000027;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10rem; }
+  #noticiaExtendida .tituloNoticiaExtendida {
+    font-family: "Copper Hewitt", sans-serif;
+    color: #e9e3e3;
+    width: 50%;
+    text-align: start;
+    margin-top: 4rem;
+    font-size: 2.5rem; }
+  #noticiaExtendida .bandaBlog {
+    position: absolute;
+    width: 305px;
+    height: 10px;
+    right: 1130px;
+    top: 280px;
+    background: #5DF99C; }
+  #noticiaExtendida .imgNoticiaExtendida {
+    width: 50%;
+    border-radius: 10px;
+    margin-top: 4rem; }
+  #noticiaExtendida .subNoticiaExtendida {
+    margin: 3rem;
+    color: #e9e3e3;
+    width: 50%;
+    font-family: "Barlow", sans-serif;
+    font-size: 1.5rem; }
+  #noticiaExtendida .pNoticiaExtendida {
+    margin: 0.5rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    color: #e9e3e3;
+    width: 50%;
+    font-family: "Barlow", sans-serif; }
+  #noticiaExtendida .botonInglesLaboral {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #000027;
+    background-color: #5DF99C;
+    padding: 0.8rem;
+    border-radius: 5px;
+    margin-top: 8rem; }
+    #noticiaExtendida .botonInglesLaboral:hover {
       color: #5DF99C;
       background-color: #2C96FB; }
 
@@ -322,13 +375,37 @@ header {
     header input[type=checkbox]:checked ~ .menu {
       top: 0; }
     header input[type=checkbox]:checked ~ label span {
-      background: #fff; }
+      background: #5DF99C; }
       header input[type=checkbox]:checked ~ label span:nth-child(1) {
         transform: translateY(8px) rotate(45deg); }
       header input[type=checkbox]:checked ~ label span:nth-child(2) {
         opacity: 0; }
       header input[type=checkbox]:checked ~ label span:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg); }
+
+@media (max-width: 1093px) {
+  header .menu {
+    position: absolute;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    top: -100vh;
+    left: 0;
+    height: 60vh;
+    width: 100%;
+    background: #000027;
+    z-index: 1; }
+    header .menu li {
+      margin: 20px;
+      font-size: 1.8em; }
+  header nav label {
+    display: block;
+    z-index: 10; }
+    header nav label span {
+      background: #2C96FB; } }
 
 main #presentacion {
   height: 90vh;
