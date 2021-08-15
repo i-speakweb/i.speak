@@ -17,9 +17,10 @@
   font-weight: lighter;
   src: url("../fonts/CooperHewitt-Light.otf"); }
 
+/* bp = breakpoint */
 .tarjeta {
   width: 400px;
-  height: 800px;
+  height: 700px;
   border-radius: 10px;
   border: 3px solid #000027; }
   .tarjeta__titulo {
@@ -57,11 +58,10 @@
           font-size: 14px;
           line-height: 17px; }
   .tarjeta__body {
-    padding: 15px;
+    padding: 0 15px 15px 15px;
     font-family: "Barlow", sans-serif;
     color: #000027;
-    letter-spacing: 0.06em;
-    margin-bottom: 20px; }
+    letter-spacing: 0.06em; }
     .tarjeta__body h3 {
       font-size: 20px;
       line-height: 24px; }
@@ -309,6 +309,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 100;
+  position: fixed;
   /* Finaliza menu hamburguesa */ }
   header .logo {
     width: auto;
@@ -409,65 +411,174 @@ header {
 
 main #presentacion {
   height: 90vh;
-  background-image: url(../img/fondoPrincipal.png);
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-color: #000027;
+  overflow: hidden; }
+  @media (min-width: 46.8em) {
+    main #presentacion {
+      height: 70vh;
+      background-color: unset;
+      background-image: url(../img/fondoPrincipal.png);
+      background-size: cover;
+      background-repeat: no-repeat; } }
+  @media (min-width: 75em) {
+    main #presentacion {
+      height: 90vh; } }
+  @media (min-width: 120em) {
+    main #presentacion {
+      height: 90vh; } }
   main #presentacion .contenidoPresentacion {
-    height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    height: 100vh; }
+    @media (min-width: 46.8em) {
+      main #presentacion .contenidoPresentacion {
+        flex-direction: row;
+        height: 100%; } }
     main #presentacion .contenidoPresentacion .bandaInferior {
-      position: absolute;
-      left: 1007px;
-      top: 785px;
+      display: none;
       background: #5DF99C;
       width: 414px;
       height: 34px;
       z-index: 0;
-      mix-blend-mode: exclusion; }
+      mix-blend-mode: exclusion;
+      position: absolute;
+      overflow: hidden; }
+      @media (min-width: 46.8em) {
+        main #presentacion .contenidoPresentacion .bandaInferior {
+          display: block;
+          top: 600px;
+          left: 400px; } }
+      @media (min-width: 48em) {
+        main #presentacion .contenidoPresentacion .bandaInferior {
+          top: 600px;
+          width: 369px; } }
+      @media (orientation: landscape) and (min-width: 60em) {
+        main #presentacion .contenidoPresentacion .bandaInferior {
+          top: 485px;
+          left: 500px; } }
+      @media (min-width: 75em) {
+        main #presentacion .contenidoPresentacion .bandaInferior {
+          display: block;
+          left: 600px;
+          top: 775px;
+          width: 414px;
+          height: 34px; } }
+      @media (min-width: 120em) {
+        main #presentacion .contenidoPresentacion .bandaInferior {
+          display: block;
+          left: 1007px;
+          top: 785px; } }
     main #presentacion .contenidoPresentacion .bandaSuperior {
+      display: none;
       position: absolute;
       width: 305px;
       height: 34px;
-      left: 1598px;
-      top: 280px;
-      background: #5DF99C; }
+      background: #5DF99C;
+      overflow: hidden; }
+      @media (min-width: 46.8em) {
+        main #presentacion .contenidoPresentacion .bandaSuperior {
+          display: block;
+          left: 600px;
+          top: 320px; } }
+      @media (min-width: 48em) {
+        main #presentacion .contenidoPresentacion .bandaSuperior {
+          top: 320px;
+          width: 169px; } }
+      @media (orientation: landscape) and (min-width: 60em) {
+        main #presentacion .contenidoPresentacion .bandaSuperior {
+          left: 855px;
+          top: 200px; } }
+      @media (min-width: 75em) {
+        main #presentacion .contenidoPresentacion .bandaSuperior {
+          display: block;
+          left: 965px;
+          top: 270px; } }
+      @media (min-width: 120em) {
+        main #presentacion .contenidoPresentacion .bandaSuperior {
+          width: 310px;
+          left: 1598px;
+          top: 280px; } }
     main #presentacion .contenidoPresentacion .textoPresentacion {
-      height: 70%;
-      padding-left: 10rem; }
+      padding-left: 1rem; }
+      @media (min-width: 46.8em) {
+        main #presentacion .contenidoPresentacion .textoPresentacion {
+          padding-left: 3rem;
+          width: auto; } }
+      @media (min-width: 75em) {
+        main #presentacion .contenidoPresentacion .textoPresentacion {
+          padding-left: 4rem; } }
+      @media (min-width: 120em) {
+        main #presentacion .contenidoPresentacion .textoPresentacion {
+          padding-left: 10rem;
+          height: 70%; } }
       main #presentacion .contenidoPresentacion .textoPresentacion p {
         color: #ffff;
         font-family: "Barlow", sans-serif;
         font-weight: 500;
         line-height: 42px;
         letter-spacing: 0.06em;
-        font-size: 35px; }
+        font-size: 1.2rem; }
+        @media (min-width: 75em) {
+          main #presentacion .contenidoPresentacion .textoPresentacion p {
+            font-size: 35px; } }
       main #presentacion .contenidoPresentacion .textoPresentacion h1 {
         color: #5DF99C;
         font-family: "Copper Hewitt", sans-serif;
-        font-size: 75px;
         letter-spacing: 0.05em;
-        padding-top: 1rem; }
+        padding-top: 1rem;
+        font-size: 3rem; }
+        @media (min-width: 46.8em) {
+          main #presentacion .contenidoPresentacion .textoPresentacion h1 {
+            font-size: 2.8rem; } }
+        @media (min-width: 75em) {
+          main #presentacion .contenidoPresentacion .textoPresentacion h1 {
+            font-size: 75px; } }
         main #presentacion .contenidoPresentacion .textoPresentacion h1 span {
           color: #2C96FB; }
       main #presentacion .contenidoPresentacion .textoPresentacion h3 {
         color: #ffff;
         font-family: "Barlow", sans-serif;
-        font-size: 1.5rem;
         font-weight: 400;
         padding-top: 2rem;
-        padding-left: 100px; }
+        padding-left: 4.5rem;
+        font-size: 1.25rem; }
+        @media (min-width: 75em) {
+          main #presentacion .contenidoPresentacion .textoPresentacion h3 {
+            padding-left: 100px;
+            font-size: 1.5rem; } }
       main #presentacion .contenidoPresentacion .textoPresentacion .bandaLateral {
         background: #5DF99C;
         position: absolute;
         width: 58px;
         height: 14px;
-        left: 160px;
-        top: 593px; }
+        top: 490px; }
+        @media (min-width: 46.8em) {
+          main #presentacion .contenidoPresentacion .textoPresentacion .bandaLateral {
+            top: 550px; } }
+        @media (min-width: 48em) {
+          main #presentacion .contenidoPresentacion .textoPresentacion .bandaLateral {
+            top: 550px; } }
+        @media (orientation: landscape) and (min-width: 60em) {
+          main #presentacion .contenidoPresentacion .textoPresentacion .bandaLateral {
+            top: 380px; } }
+        @media (min-width: 75em) {
+          main #presentacion .contenidoPresentacion .textoPresentacion .bandaLateral {
+            top: 695px;
+            left: 90px; } }
+        @media (min-width: 120em) {
+          main #presentacion .contenidoPresentacion .textoPresentacion .bandaLateral {
+            left: 160px;
+            top: 593px; } }
       main #presentacion .contenidoPresentacion .textoPresentacion p {
         padding-top: 3rem; }
+        @media (min-width: 48em) {
+          main #presentacion .contenidoPresentacion .textoPresentacion p {
+            padding-top: 2rem; } }
+        @media (min-width: 75em) {
+          main #presentacion .contenidoPresentacion .textoPresentacion p {
+            padding-top: 3rem; } }
         main #presentacion .contenidoPresentacion .textoPresentacion p .botonVerCursos {
           font-family: "Barlow", sans-serif;
           font-weight: 600;
@@ -477,14 +588,34 @@ main #presentacion {
           background-color: #5DF99C;
           padding: 0.8rem;
           border-radius: 5px; }
+          @media (min-width: 46.8em) {
+            main #presentacion .contenidoPresentacion .textoPresentacion p .botonVerCursos {
+              margin-left: 3rem; } }
+          @media (min-width: 75em) {
+            main #presentacion .contenidoPresentacion .textoPresentacion p .botonVerCursos {
+              margin-left: 3rem; } }
+          @media (min-width: 120em) {
+            main #presentacion .contenidoPresentacion .textoPresentacion p .botonVerCursos {
+              margin-left: 0; } }
           main #presentacion .contenidoPresentacion .textoPresentacion p .botonVerCursos:hover {
             color: #5DF99C;
             background-color: #2C96FB; }
-    main #presentacion .contenidoPresentacion .imagenPresentacion img {
-      position: relative;
-      width: 800px;
-      height: 500px;
-      z-index: 5; }
+    main #presentacion .contenidoPresentacion .imagenPresentacion {
+      display: none;
+      overflow: hidden; }
+      @media (min-width: 46.8em) {
+        main #presentacion .contenidoPresentacion .imagenPresentacion {
+          display: block; } }
+      main #presentacion .contenidoPresentacion .imagenPresentacion img {
+        position: relative;
+        z-index: 5;
+        width: 500px;
+        padding-left: 2rem; }
+        @media (min-width: 75em) {
+          main #presentacion .contenidoPresentacion .imagenPresentacion img {
+            width: 900px;
+            height: auto;
+            padding-left: 0; } }
 
 main .tituloCentrado {
   font-family: Copper Hewitt;
@@ -494,7 +625,11 @@ main .tituloCentrado {
     font-style: bold;
     font-size: 60px;
     font-weight: 600;
-    letter-spacing: 0.05em; }
+    letter-spacing: 0.05em;
+    padding-top: 20px; }
+    @media (min-width: 46.8em) {
+      main .tituloCentrado h2 {
+        padding-top: 0; } }
   main .tituloCentrado__postTitulo {
     font-family: "Barlow", sans-serif;
     font-weight: 500;
@@ -512,11 +647,20 @@ main .tituloCentrado {
     letter-spacing: 0.06em; }
 
 main .cursos {
-  background-image: url(../img/green_background.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  height: 2460px; }
+  height: auto; }
+  @media (min-width: 46.8em) {
+    main .cursos {
+      background-image: url(../img/green_background.png);
+      background-repeat: no-repeat;
+      background-size: 200vh;
+      height: 2460px;
+      background-position: bottom; } }
+  @media (min-width: 48em) {
+    main .cursos {
+      height: auto; } }
+  @media (min-width: 120em) {
+    main .cursos {
+      background-size: contain; } }
   main .cursos__contenedor {
     display: flex; }
     main .cursos__contenedor .opacity_ruler1, main .cursos__contenedor .opacity_ruler2 {
@@ -524,11 +668,21 @@ main .cursos {
       width: 200px;
       height: 800px;
       top: 0px;
-      background: linear-gradient(to right, white, transparent 90%);
       z-index: 20; }
+      @media (min-width: 46.8em) {
+        main .cursos__contenedor .opacity_ruler1, main .cursos__contenedor .opacity_ruler2 {
+          background: linear-gradient(to right, white, transparent 10%); } }
+      @media (min-width: 75em) {
+        main .cursos__contenedor .opacity_ruler1, main .cursos__contenedor .opacity_ruler2 {
+          background: linear-gradient(to right, white, transparent 90%); } }
     main .cursos__contenedor .opacity_ruler2 {
-      right: 0px;
-      background: linear-gradient(to left, white, transparent 90%); }
+      right: 0px; }
+      @media (min-width: 46.8em) {
+        main .cursos__contenedor .opacity_ruler2 {
+          background: linear-gradient(to left, white, transparent 10%); } }
+      @media (min-width: 75em) {
+        main .cursos__contenedor .opacity_ruler2 {
+          background: linear-gradient(to left, white, transparent 90%); } }
     main .cursos__contenedor .prev_cursos {
       z-index: 50; }
     main .cursos__contenedor .next_cursos {
@@ -538,67 +692,145 @@ main .cursos {
   main .cursos__info {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    background-color: #5DF99C; }
+    @media (min-width: 46.8em) {
+      main .cursos__info {
+        background-color: unset; } }
     main .cursos__info .infoIzq {
-      margin-top: 150px;
-      display: flex; }
+      display: flex;
+      flex-direction: column; }
+      @media (min-width: 48em) {
+        main .cursos__info .infoIzq {
+          flex-direction: row;
+          align-items: center; } }
+      @media (min-width: 120em) {
+        main .cursos__info .infoIzq {
+          margin-top: 150px;
+          flex-direction: row;
+          align-items: unset; } }
       main .cursos__info .infoIzq__texto {
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        align-items: center; }
+        @media (min-width: 46.8em) {
+          main .cursos__info .infoIzq__texto {
+            align-items: unset; } }
         main .cursos__info .infoIzq__texto__titulo, main .cursos__info .infoDer__texto__titulo {
           color: #000027;
           font-family: "Copper Hewitt", sans-serif;
           font-weight: 600;
-          font-size: 50px;
+          font-size: 2rem;
           line-height: 70px;
+          text-align: center;
           letter-spacing: 0.06em;
           margin-top: 20px; }
+          @media (min-width: 120em) {
+            main .cursos__info .infoIzq__texto__titulo, main .cursos__info .infoDer__texto__titulo {
+              font-size: 50px;
+              padding-left: 0;
+              text-align: left; } }
         main .cursos__info .infoIzq__texto__parrafo, main .cursos__info .infoDer__texto__parrafo {
           color: #000027;
-          width: 736px;
           font-family: "Copper Hewitt", sans-serif;
           font-weight: normal;
-          font-size: 25px;
           line-height: 45px;
           letter-spacing: 0.1em;
-          margin-right: 150px; }
+          text-align: center;
+          padding: 0 1rem; }
+          @media (min-width: 120em) {
+            main .cursos__info .infoIzq__texto__parrafo, main .cursos__info .infoDer__texto__parrafo {
+              margin-right: 150px;
+              font-size: 25px;
+              width: 736px;
+              text-align: left;
+              padding: 0; } }
         main .cursos__info .infoIzq__texto__boton, main .cursos__info .infoDer__texto__boton {
-          width: 208px;
-          height: 74px;
           background: #000027;
           box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
           border-radius: 4px;
           color: #5DF99C;
-          font-size: 26px;
+          font-size: 1rem;
           font-style: normal;
           font-family: "Copper Hewitt", sans-serif;
           font-weight: bold;
           line-height: 34px;
           letter-spacing: 0.06em;
-          margin-top: 60px;
           border: none;
-          cursor: pointer; }
+          cursor: pointer;
+          width: 170px;
+          height: 60px;
+          margin: 20px 0;
+          display: none; }
+          @media (min-width: 46.8em) {
+            main .cursos__info .infoIzq__texto__boton, main .cursos__info .infoDer__texto__boton {
+              display: block;
+              width: 208px;
+              height: 74px;
+              font-size: 26px;
+              margin-top: 60px;
+              margin-bottom: 0; } }
       main .cursos__info .infoIzq__container__img, main .cursos__info .infoDer__container__img {
-        width: 620px;
-        height: auto;
+        display: none;
+        width: 90vw;
         filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
-        border-radius: 10px; }
+        border-radius: 10px;
+        margin: 0 5%; }
+        @media (min-width: 46.8em) {
+          main .cursos__info .infoIzq__container__img, main .cursos__info .infoDer__container__img {
+            display: block;
+            width: 520px;
+            height: auto;
+            margin: 0; } }
+        @media (min-width: 48em) {
+          main .cursos__info .infoIzq__container__img, main .cursos__info .infoDer__container__img {
+            width: 400px; } }
+        @media (min-width: 120em) {
+          main .cursos__info .infoIzq__container__img, main .cursos__info .infoDer__container__img {
+            display: block;
+            width: 620px;
+            height: auto;
+            margin: 0; } }
     main .cursos__info .infoDer {
       display: flex;
-      margin-top: 80px; }
+      flex-direction: column; }
+      @media (min-width: 48em) {
+        main .cursos__info .infoDer {
+          flex-direction: row;
+          align-items: center; } }
+      @media (min-width: 120em) {
+        main .cursos__info .infoDer {
+          margin-top: 80px;
+          flex-direction: row;
+          align-items: unset; } }
       main .cursos__info .infoDer__texto {
         display: flex;
         flex-direction: column;
-        align-items: flex-end; }
-        main .cursos__info .infoDer__texto__titulo {
-          text-align: right; }
+        align-items: center; }
+        @media (min-width: 46.8em) {
+          main .cursos__info .infoDer__texto {
+            align-items: flex-end; } }
+        @media (min-width: 46.8em) {
+          main .cursos__info .infoDer__texto__titulo {
+            text-align: right; } }
         main .cursos__info .infoDer__texto__parrafo {
-          text-align: right;
-          margin-right: 0px;
-          margin-left: 150px; }
+          margin-right: 0px; }
+          @media (min-width: 46.8em) {
+            main .cursos__info .infoDer__texto__parrafo {
+              text-align: right;
+              margin-left: 150px; } }
+        main .cursos__info .infoDer__texto__boton {
+          display: block; }
 
 main .experiencias {
-  background: #000027; }
+  background: #000027;
+  display: none; }
+  @media (min-width: 48em) {
+    main .experiencias {
+      display: block; } }
+  @media (min-width: 60em) {
+    main .experiencias {
+      display: block; } }
   main .experiencias .alumnos {
     padding-top: 80px; }
     main .experiencias .alumnos__cards {
@@ -656,36 +888,58 @@ main .whatsapp {
 
 footer {
   background: #000027;
-  height: 350px;
   display: flex;
+  height: auto;
+  flex-direction: column;
   justify-content: center;
   color: #FFF;
   font-family: "Barlow", sans-serif;
   font-size: 18px;
   letter-spacing: 0.06em;
-  line-height: 22px; }
+  line-height: 22px;
+  overflow: hidden; }
+  @media (min-width: 120em) {
+    footer {
+      height: 350px;
+      flex-direction: row; } }
   footer .footer__container {
     padding-top: 80px;
-    width: 1720px;
-    height: 280px;
+    padding-left: 20px;
     border-top: 2px solid #FFF;
     display: flex;
-    justify-content: space-between; }
-    footer .footer__container__redes {
-      width: 350px; }
-      footer .footer__container__redes p {
-        padding-top: 20px; }
-      footer .footer__container__redes__logos {
-        padding-top: 50px;
-        width: 225px;
-        display: flex;
-        justify-content: space-between; }
+    flex-direction: column;
+    justify-content: space-evenly; }
+    @media (min-width: 120em) {
+      footer .footer__container {
+        width: 1720px;
+        justify-content: space-between;
+        height: 280px;
+        flex-direction: row;
+        padding-left: 0; } }
+    @media (min-width: 120em) {
+      footer .footer__container__redes {
+        width: 350px; } }
+    footer .footer__container__redes p {
+      padding-top: 20px; }
+    footer .footer__container__redes__logos {
+      padding-top: 50px;
+      width: 225px;
+      display: flex;
+      justify-content: space-between; }
     footer .footer__container__empresa {
-      width: 400px; }
+      margin-top: 20px; }
+      @media (min-width: 120em) {
+        footer .footer__container__empresa {
+          width: 400px;
+          margin-top: 0; } }
       footer .footer__container__empresa p {
         padding-top: 20px; }
     footer .footer__container__staff {
-      width: 840px; }
+      margin-top: 20px; }
+      @media (min-width: 120em) {
+        footer .footer__container__staff {
+          width: 840px;
+          margin-top: 0; } }
       footer .footer__container__staff__columnas {
         padding-top: 20px;
         display: flex;

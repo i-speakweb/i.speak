@@ -1,6 +1,6 @@
 .tarjeta{
     width: 400px;
-    height: 800px;
+    height: 700px;
     border-radius: 10px;
     border: 3px solid $colorFondo;
 
@@ -52,11 +52,10 @@
         }
     }
     &__body{
-        padding: 15px;
+        padding:0 15px 15px 15px;
         font-family: $fuenteContenido;
         color: $colorFondo;
         letter-spacing: $interlineadoDeTexto;
-        margin-bottom: 20px;
 
         h3{
             font-size: 20px;
