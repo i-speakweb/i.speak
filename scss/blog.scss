@@ -17,7 +17,7 @@
         font-size: 30px;
         letter-spacing: 0.05em;
         padding-top: 2rem;
-        width: 80%;
+        width: 90%;
 
         @media (min-width:$bp-small-2) {
             font-size: 50px;
@@ -66,7 +66,12 @@
                 font-family: $fuenteGeneral;
                 text-align: left;
                 font-size: 25px;
-                width: 75%;
+                width: 90%;
+
+                @media (min-width: $bp-med) {
+                    
+                    width: 80%;
+                }
 
                 @media (min-width: $bp-xl) {
                     font-size: 30px;
@@ -81,8 +86,8 @@
 
             .imagenBlog {
                 margin-top: 1rem;
-                width: 270px;
-                height: 160px;
+                width: 90%;
+                height: auto;
                 border-radius: 10px;
             
                 @media (min-width: $bp-small) {
@@ -91,8 +96,8 @@
                 }
 
                 @media (min-width: $bp-med) {
-                    width: 550px;
-                    height: 350px;
+                    width: 80%;
+                    height: auto;
                 }
 
                 @media (min-width: $bp-large) {
@@ -115,7 +120,7 @@
                 font-family: $fuenteContenido;
                 margin-top: 2rem;
                 text-align: left;
-                width: 75%;
+                width: 90%;
                 font-size: 1.2rem;
 
                 @media (min-width: $bp-med) {
@@ -135,7 +140,7 @@
                 font-family: $fuenteContenido;
                 margin-top: 1rem;
                 text-align: left;
-                width: 75%;
+                width: 90%;
 
                 @media (min-width: $bp-med) {
                     width: 80%;
@@ -250,7 +255,7 @@
     .tituloNoticiaExtendida {
         font-family: $fuenteGeneral;
         color: rgb(233, 227, 227);
-        width: 80%;
+        width: 90%;
         text-align: start;
         margin-top: 1rem;
         font-size: 1.8rem;
@@ -284,7 +289,8 @@
     }
 
     .imgNoticiaExtendida {
-        width: 80%;
+        width: 90%;
+        height: auto;
         border-radius: 10px;
         margin-top: 1rem;
 
@@ -305,7 +311,7 @@
     .subNoticiaExtendida {
         margin: 1.3rem;
         color: rgb(233, 227, 227);
-        width: 80%;
+        width: 90%;
         font-family: $fuenteContenido;
         font-size: 1.2rem;
 
@@ -332,7 +338,7 @@
         line-height: 1.2rem;
         text-align: justify;
         color: rgb(233, 227, 227);
-        width: 80%;
+        width: 90%;
         font-family: $fuenteContenido;
 
         @media (min-width:$bp-med) {
