@@ -864,20 +864,27 @@ main .cursos {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: #5DF99C; }
     @media (min-width: 46.8em) {
       main .cursos__info {
-        background-color: unset; } }
+        background-color: unset;
+        margin-top: 4rem; } }
+    @media (min-width: 60em) {
+      main .cursos__info {
+        background-color: unset;
+        margin-top: 2rem; } }
     main .cursos__info .infoIzq {
       display: flex;
       flex-direction: column; }
       @media (min-width: 48em) {
         main .cursos__info .infoIzq {
           flex-direction: row;
-          align-items: center; } }
+          align-items: center;
+          width: 80%; } }
       @media (min-width: 120em) {
         main .cursos__info .infoIzq {
-          margin-top: 150px;
+          margin-top: 100px;
           flex-direction: row;
           align-items: unset; } }
       main .cursos__info .infoIzq__texto {
@@ -886,7 +893,7 @@ main .cursos {
         align-items: center; }
         @media (min-width: 46.8em) {
           main .cursos__info .infoIzq__texto {
-            align-items: unset; } }
+            align-items: flex-start; } }
         main .cursos__info .infoIzq__texto__titulo, main .cursos__info .infoDer__texto__titulo {
           color: #000027;
           font-family: "Copper Hewitt", sans-serif;
@@ -896,6 +903,9 @@ main .cursos {
           text-align: center;
           letter-spacing: 0.06em;
           margin-top: 20px; }
+          @media (min-width: 46.8em) {
+            main .cursos__info .infoIzq__texto__titulo, main .cursos__info .infoDer__texto__titulo {
+              align-items: flex-start; } }
           @media (min-width: 120em) {
             main .cursos__info .infoIzq__texto__titulo, main .cursos__info .infoDer__texto__titulo {
               font-size: 40px;
@@ -905,10 +915,15 @@ main .cursos {
           color: #000027;
           font-family: "Copper Hewitt", sans-serif;
           font-weight: normal;
-          line-height: 45px;
+          line-height: 35px;
           letter-spacing: 0.1em;
           text-align: center;
           padding: 0 1rem; }
+          @media (min-width: 46.8em) {
+            main .cursos__info .infoIzq__texto__parrafo, main .cursos__info .infoDer__texto__parrafo {
+              width: 90%;
+              text-align: start;
+              padding: 0; } }
           @media (min-width: 120em) {
             main .cursos__info .infoIzq__texto__parrafo, main .cursos__info .infoDer__texto__parrafo {
               margin-right: 150px;
@@ -953,12 +968,12 @@ main .cursos {
         @media (min-width: 46.8em) {
           main .cursos__info .infoIzq__container__img, main .cursos__info .infoDer__container__img {
             display: block;
-            width: 520px;
+            width: 550px;
             height: auto;
             margin: 0; } }
         @media (min-width: 48em) {
           main .cursos__info .infoIzq__container__img, main .cursos__info .infoDer__container__img {
-            width: 400px; } }
+            width: 480px; } }
         @media (min-width: 120em) {
           main .cursos__info .infoIzq__container__img, main .cursos__info .infoDer__container__img {
             display: block;
@@ -971,12 +986,21 @@ main .cursos {
       @media (min-width: 48em) {
         main .cursos__info .infoDer {
           flex-direction: row;
-          align-items: center; } }
+          align-items: flex-start;
+          justify-content: flex-start;
+          width: 80%; } }
       @media (min-width: 120em) {
         main .cursos__info .infoDer {
           margin-top: 80px;
           flex-direction: row;
-          align-items: unset; } }
+          align-items: unset;
+          margin-bottom: 100px; } }
+      @media (min-width: 48em) {
+        main .cursos__info .infoDer__container__img {
+          margin-top: 3rem; } }
+      @media (min-width: 60em) {
+        main .cursos__info .infoDer__container__img {
+          margin-top: 2rem; } }
       main .cursos__info .infoDer__texto {
         display: flex;
         flex-direction: column;
