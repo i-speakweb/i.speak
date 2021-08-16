@@ -2,6 +2,13 @@
 # iSpeak
 
 Sitio web de iSpeak
+
+## -- Update 1.0 (RC)
+- Se trabaja en el responsive de la sección blog y noticia extendida
+- Se agrega flecha para volver hacia atrás en la noticia extendida
+- Se achican tamaños de textos en general de la sección principal
+
+
 ## -- Update 0.9 (beta)
 - Se trabaja en el responsive cambiando algunos elementos y eliminando otros.
 

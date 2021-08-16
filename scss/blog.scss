@@ -1,80 +1,181 @@
-
-#contenidoBlog{
+#contenidoBlog {
     background-color: $colorFondo;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 10rem;
+    padding-bottom: 4rem;
 
-    .tituloBlog{
-        color: $colorTitulos;
-        font-family: $fuenteGeneral;
-        font-size: 50px;
-        letter-spacing: 0.05em;
-        padding-top: 2rem;
+    @media (min-width:$bp-xl-2) {
+        padding-bottom: 10rem;
     }
 
-    .grillaNoticias{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        color: rgb(244, 240, 240);
-        width: 90%;
-       
-        
+    .tituloBlog {
+        color: $colorTitulos;
+        font-family: $fuenteGeneral;
+        font-size: 30px;
+        letter-spacing: 0.05em;
+        padding-top: 2rem;
+        width: 80%;
 
-        .itemBlog{
-            width: 40%;
+        @media (min-width:$bp-small-2) {
+            font-size: 50px;
+            width: 90%;
+        }
+
+
+    }
+
+    .grillaNoticias {
+        display: block;
+        justify-content: center;
+        color: rgb(244, 240, 240);
+        width: 95%;
+        
+        @media (min-width: $bp-large-2) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            color: rgb(244, 240, 240);
+            width: 100%;
+        }
+
+        @media (min-width: $bp-xxl) {
+            justify-content: center;
+            width: 90%;
+        }
+
+
+        .itemBlog {
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-top: 5rem;
-        
+            margin-top: 2rem;
 
-            .tituloNoticia{
+            @media (min-width: $bp-xl) {
+                width: 40%;
+                margin-top: 5rem;
+            }
+
+
+            .tituloNoticia {
                 font-family: $fuenteGeneral;
-                text-align: start;
-                font-size: 30px;
-                width: 80%;
+                text-align: left;
+                font-size: 25px;
+                width: 75%;
+
+                @media (min-width: $bp-xl) {
+                    font-size: 30px;
+                    width: 90%;
+                }
+
+                @media (min-width: $bp-xl-2) {
+                    font-size: 30px;
+                    width: 80%;
+                }
             }
 
-            .imagenBlog{
-                margin-top: 2rem;
-                width: 550px;
-                height: 350px;
+            .imagenBlog {
+                margin-top: 1rem;
+                width: 270px;
+                height: 160px;
                 border-radius: 10px;
+            
+                @media (min-width: $bp-small) {
+                    width: 350px;
+                    height: 210px;
+                }
+
+                @media (min-width: $bp-med) {
+                    width: 550px;
+                    height: 350px;
+                }
+
+                @media (min-width: $bp-large) {
+                    width: 400px;
+                    height: 270px;
+                }
+                
+                @media (min-width: $bp-xl) {
+                    width: 360px;
+                    height: 250px;
+                }
+
+                @media (min-width: $bp-xl-2) {
+                    width: 550px;
+                    height: 350px;
+                }
             }
 
-            .subtituloNoticia{
+            .subtituloNoticia {
                 font-family: $fuenteContenido;
                 margin-top: 2rem;
                 text-align: left;
-                width: 80%;
+                width: 75%;
+                font-size: 1.2rem;
+
+                @media (min-width: $bp-med) {
+                    width: 80%;
+                }
+
+                @media (min-width: $bp-large-2) {
+                    width: 85%;
+                }
+
+                @media (min-width: $bp-xl-2) {
+                    width: 80%;
+                }
             }
 
-            .parrafoNoticia{
+            .parrafoNoticia {
                 font-family: $fuenteContenido;
                 margin-top: 1rem;
                 text-align: left;
-                width: 80%;
+                width: 75%;
+
+                @media (min-width: $bp-med) {
+                    width: 80%;
+                }
+
+                @media (min-width: $bp-large-2) {
+                    width: 85%;
+                }
+
+                @media (min-width: $bp-xl-2) {
+                    width: 80%;
+                }
 
             }
 
-            .botonVerMas{
+            .botonVerMas {
                 font-family: $fuenteContenido;
                 color: $colorTitulos;
                 font-weight: 600;
                 text-decoration: none;
-                font-size: 1.3rem;
-                margin-top: 2rem;
-                width: 15%;
-                
-                &:hover{
+                font-size: 1.4rem;
+                margin-top: 1rem;
+                width: 25%;
+
+                &:hover {
                     color: $colorSubtitulos;
+                }
+
+                @media (min-width: $bp-med) {
+                    font-size: 1.3rem;
+                    margin-top: 2rem;
+                    width: 15%;
+                }
+
+                @media (min-width: $bp-large-2) {
+                    width: 20%;
+                }
+
+                @media (min-width: $bp-xl-2) {
+                    width: 15%;
                 }
             }
 
@@ -90,11 +191,15 @@
         background-color: $colorTitulos;
         padding: 0.8rem;
         border-radius: 5px;
-        margin-top: 8rem;
+        margin-top: 4rem;
 
-        &:hover{
+        &:hover {
             color: $colorTitulos;
             background-color: $colorSubtitulos;
+        }
+
+        @media (min-width: $bp-med) {
+            margin-top: 8rem;
         }
 
     }
@@ -103,72 +208,184 @@
 
 /* ------------ NOTICIA EXTENDIDA ------------ */
 
+#bodyNoticia {
+    background-color: $colorFondo;
 
-#noticiaExtendida{
+    
+    .flechaVolver{
+        height: 20px;
+        width: 20px;
+        color: white;
+        margin-left: 2rem;
+
+        @media (min-width:$bp-med) {
+            margin-left: 5rem;
+        }
+
+        @media (min-width:$bp-large) {
+            margin-left: 7rem;
+            height: 25px;
+            width: 25px;
+        }
+
+        @media (min-width:$bp-xl-2) {
+            margin-left: 20rem;
+            height: 30px;
+            width: 30px;
+        }
+    }
+
+#noticiaExtendida {
     background-color: $colorFondo;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 10rem;
+    padding-bottom: 4rem;
 
-    .tituloNoticiaExtendida{
+    @media (min-width:$bp-xl-2) {
+        padding-bottom: 10rem;
+    }
+
+    .tituloNoticiaExtendida {
         font-family: $fuenteGeneral;
         color: rgb(233, 227, 227);
-        width: 50%;
+        width: 80%;
         text-align: start;
-        margin-top: 4rem;
-        font-size: 2.5rem;
+        margin-top: 1rem;
+        font-size: 1.8rem;
+
+
+        @media (min-width:$bp-med) {
+            margin-top: 2rem;
+            font-size: 2.2rem;
+            width: 80%;
+        }
+
+        @media (min-width:$bp-large) {
+            font-size: 2.5rem;
+            width: 80%;
+        }
+
+        @media (min-width:$bp-xl-2) {
+            width: 50%;
+            margin-top: 2rem;
+        }
 
     }
-    .bandaBlog{
+
+    .bandaBlog {
         position: absolute;
         width: 305px;
         height: 10px;
         right: 1130px;
-        top: 280px;
+        top: 300px;
         background: $colorTitulos;
     }
 
-    .imgNoticiaExtendida{
-        width: 50%;
+    .imgNoticiaExtendida {
+        width: 80%;
         border-radius: 10px;
-        margin-top: 4rem;
-        
+        margin-top: 1rem;
+
+        @media (min-width:$bp-med) {
+            width: 80%;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        @media (min-width:$bp-xl-2) {
+            width: 50%;
+            border-radius: 10px;
+            margin-top: 4rem;
+        }
 
     }
 
-    .subNoticiaExtendida{
-        margin: 3rem;
+    .subNoticiaExtendida {
+        margin: 1.3rem;
         color: rgb(233, 227, 227);
-        width: 50%;
+        width: 80%;
         font-family: $fuenteContenido;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+
+        @media (min-width:$bp-med) {
+            margin-top: 2rem;
+            font-size: 1.6rem;
+            width: 80%;
+        }
+
+        @media (min-width:$bp-large) {
+            font-size: 2rem;
+            width: 80%;
+        }
+
+        @media (min-width:$bp-xl-2) {
+            margin: 3rem;
+            width: 50%;
+            font-size: 1.5rem;
+        }
     }
 
-    .pNoticiaExtendida{
-        margin: 0.5rem;
-        line-height: 1.5rem;
+    .pNoticiaExtendida {
+        margin: 0.9rem;
+        line-height: 1.2rem;
         text-align: justify;
         color: rgb(233, 227, 227);
-        width: 50%;
+        width: 80%;
         font-family: $fuenteContenido;
+
+        @media (min-width:$bp-med) {
+            margin: 0.5rem;
+            line-height: 1.5rem;
+            width: 80%;
+            font-size: 1.2rem;
+        }
+
+        @media (min-width:$bp-large) {
+            margin: 0,9rem;
+            line-height: 1.8rem;
+            width: 80%;
+            font-size: 1.4rem;
+        }
+
+        @media (min-width:$bp-xl-2) {
+            margin: 0.5rem;
+            line-height: 2rem;
+            width: 50%;
+   
+        }
     }
 
     .botonInglesLaboral {
         font-family: $fuenteContenido;
         font-weight: 600;
-        font-size: 1.3rem;
+        font-size: 1rem;
         text-decoration: none;
         color: $colorFondo;
         background-color: $colorTitulos;
         padding: 0.8rem;
         border-radius: 5px;
-        margin-top: 8rem;
+        margin-top: 3rem;
 
-        &:hover{
+        &:hover {
             color: $colorTitulos;
             background-color: $colorSubtitulos;
         }
+
+        @media (min-width:$bp-med) {
+            font-size: 1.3rem;
+            margin-top: 5rem;
+        }
+
+        @media (min-width:$bp-large) {
+            margin-top: 5rem;
+        }
+
+        @media (min-width:$bp-xl-2) {
+            margin-top: 8rem;
+        }
+    }
 }
+
 }

@@ -25,8 +25,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 100;
-    position: fixed;
 
     .logo {
         width: auto;
@@ -160,7 +158,7 @@ header {
             margin: 0;
             top: -100vh;
             left: 0;
-            height: 60vh;
+            height: 80vh;
             width: 100%;
             background: $colorFondo;
             z-index: 1;
@@ -206,7 +204,7 @@ main {
         }
 
         @media (min-width: $bp-1080p){
-            height: 90vh;
+            height: 100vh;
         }
 
         .contenidoPresentacion {
@@ -222,7 +220,7 @@ main {
 
             }
 
-            .bandaInferior{
+           /* .bandaInferior{
                 display: none;
                 background: $colorTitulos;
                 width: 414px;
@@ -290,7 +288,7 @@ main {
                     left: 1598px;
                     top: 280px;
                 }
-            }
+            }*/
 
             .textoPresentacion {
                 padding-left: 1rem;
@@ -318,7 +316,7 @@ main {
                     font-size: 1.2rem;
                     
                     @media (min-width: $bp-xxl){
-                        font-size: 35px;
+                        font-size: 25px;
 
                     }
                 }
@@ -335,7 +333,7 @@ main {
                     }
 
                     @media (min-width: $bp-xxl){
-                        font-size: 75px;
+                        font-size: 65px;
 
                     }
                     span {
@@ -348,12 +346,10 @@ main {
                     font-family: $fuenteContenido;
                     font-weight: 400;
                     padding-top: 2rem;
-                    padding-left: 4.5rem;
                     font-size: 1.25rem;
                     
                     @media (min-width: $bp-xxl){
-                        padding-left: 100px;
-                        font-size: 1.5rem;
+                        font-size: 1.3rem;
 
                     }
                 }
@@ -452,6 +448,9 @@ main {
         }
 
     }
+
+    // ------------------- Cursos ------------------- //
+    
     .tituloCentrado{
         font-family: Copper Hewitt;
         text-align: center;
@@ -459,7 +458,7 @@ main {
     
         h2{
             font-style: bold;
-            font-size: 60px;
+            font-size: 50px;
             font-weight: 600;
             letter-spacing: 0.05em;
             padding-top: 20px;
@@ -470,7 +469,7 @@ main {
         &__postTitulo{
             font-family: $fuenteContenido;
             font-weight: 500;
-            font-size: 30px;
+            font-size: 25px;
             line-height: 36px;
         }
 
@@ -548,6 +547,10 @@ main {
             }
         }
 
+
+        // ----------------- Metodologia de los cursos ------------ //
+
+
         &__info{
             display: flex;
             flex-direction: column;
@@ -591,7 +594,7 @@ main {
                         margin-top: 20px;
                         
                         @media (min-width: $bp-1080p){
-                            font-size: 50px;
+                            font-size: 40px;
                             padding-left: 0;
                             text-align: left;
                         }
@@ -608,7 +611,7 @@ main {
                         padding: 0 1rem;
                         @media (min-width: $bp-1080p){
                             margin-right: 150px;
-                            font-size: 25px;
+                            font-size: 20px;
                             width: 736px;
                             text-align: left;
                             padding: 0;
@@ -616,10 +619,10 @@ main {
                     }
 
                     &__boton{
-                        background: $colorFondo;
+                        background: $colorSubtitulos;
                         box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
                         border-radius: 4px;
-                        color: $colorTitulos;
+                        color: $colorFondo;
                         font-size: 1rem;
                         font-style: normal;
                         font-family: $fuenteGeneral;
@@ -633,11 +636,15 @@ main {
                         margin: 20px 0;
                         display: none;
                         
+                        &:hover{
+                            background-color: $colorFondo;
+                            color: $colorTitulos;
+                        }
                         @media (min-width: $bp-med){
                             display: block;
-                            width: 208px;
-                            height: 74px;
-                            font-size: 26px;
+                            width: 185px;
+                            height: 60px;
+                            font-size: 23px;
                             margin-top: 60px;
                             margin-bottom: 0;
                         }
@@ -725,12 +732,16 @@ main {
 
                     &__boton{
                         @extend .infoIzq__texto__boton;
+                        margin-bottom: 3rem;
                         display: block;
                     }
                 }
             }
         }
     }
+
+
+    // ------------- Testimonios alumnos -----------//
     .experiencias{
         background: $colorFondo;
         display: none;
@@ -764,13 +775,16 @@ main {
                 font-family: $fuenteGeneral;
                 font-style: normal;
                 font-weight: 600;
-                font-size: 50px;
+                font-size: 40px;
                 line-height: 70px;
                 text-align: center;
                 letter-spacing: $interlineadoDeTexto;
             }
 
         }
+
+
+        //--------------- Confian en nosotros ------------//
 
         .empresas{
             padding-top: 80px;
@@ -787,6 +801,7 @@ main {
             }
         }
     }
+
     .whatsapp{
         position: fixed;
         width: 320px;
@@ -826,7 +841,7 @@ main {
     }
 }
 
-//------ Footer ----- //
+//-------------- Footer ------------- //
 
 footer{
     background: $colorFondo;
@@ -842,7 +857,7 @@ footer{
     overflow: hidden;
     
     @media (min-width: $bp-1080p){
-        height: 350px;
+        height: 320px;
         flex-direction: row;
     }
     
@@ -854,6 +869,7 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+
         @media (min-width: $bp-1080p){
             width: 1720px;
             justify-content: space-between;
@@ -877,6 +893,11 @@ footer{
                 width: 225px;
                 display: flex;
                 justify-content: space-between;
+
+                img{
+                    width: 35px;
+                    height: 35px;
+                }
             }
         }
         &__empresa{
