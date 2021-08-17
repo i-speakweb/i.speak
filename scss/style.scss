@@ -148,6 +148,10 @@ header {
 @media (max-width: 1093px) {
     header {
 
+        .logo {
+            padding-left: 25px;
+        }
+
         .menu {
             position: absolute;
             top: 100px;
@@ -184,6 +188,17 @@ header {
     }
 }
 
+@media only screen and (max-width: 550px) {
+    header {
+        height: 15vh;
+
+        .logo {
+            height: 2.3em;
+        }
+    }
+}
+
+
 // ------------ Main -------------- //
 
 main {
@@ -191,6 +206,10 @@ main {
         height: 90vh;
         background-color: $colorFondo;
         overflow: hidden;
+
+        @media (min-width: $bp-small){
+            height: 85vh;
+        }
         
         @media (min-width:$bp-med){
             height: 70vh;
@@ -198,7 +217,14 @@ main {
             background-image: url(../img/fondoPrincipal.png);
             background-size: cover;
             background-repeat: no-repeat;
+            background-position: right;
         }
+
+        @media (min-width: $bp-large){
+            height: 40vh;
+            background-position:center;
+        }
+
         @media (min-width: $bp-xxl){
             height: 90vh;
         }
@@ -213,10 +239,15 @@ main {
             justify-content: space-between;
             align-items: center;
             height: 100vh;
-            
+        
+
             @media (min-width:$bp-med){
                 flex-direction: row;
                 height: 100%;
+            }
+                @media (min-width:$bp-large){
+                    flex-direction: row;
+                    height: 80%;
 
             }
 
@@ -294,6 +325,7 @@ main {
                 padding-left: 1rem;
                 
                 
+                
                 @media (min-width:$bp-med){
                     padding-left: 3rem;
                     width: auto;
@@ -307,14 +339,16 @@ main {
                     
                 }
 
-                p {
+                .parrafoPresentacion {
+                    padding-top: 4px;
                     color: #ffff;
                     font-family: $fuenteContenido;
                     font-weight: 500;
                     line-height: 42px;
                     letter-spacing: $interlineadoDeTexto;
                     font-size: 1.2rem;
-                    
+    
+                
                     @media (min-width: $bp-xxl){
                         font-size: 25px;
 
@@ -326,7 +360,11 @@ main {
                     font-family: $fuenteGeneral;
                     letter-spacing: 0.05em;
                     padding-top: 1rem;
-                    font-size: 3rem;
+                    font-size: 2.5rem;
+
+                    @media (min-width: $bp-small){
+                        font-size: 3rem;
+                    }
 
                     @media (min-width: $bp-med){
                         font-size: 2.8rem;
@@ -458,37 +496,49 @@ main {
     
         h2{
             font-style: bold;
-            font-size: 50px;
+            font-size: 40px;
             font-weight: 600;
             letter-spacing: 0.05em;
             padding-top: 20px;
+
             @media (min-width: $bp-med){
                 padding-top: 0;
+                font-size: 50px;
             }
         }
         &__postTitulo{
             font-family: $fuenteContenido;
             font-weight: 500;
-            font-size: 25px;
+            font-size: 20px;
             line-height: 36px;
+
+            @media (min-width: $bp-med){
+                font-size: 25px;
+            }
         }
 
         &__previoTarjeta{
             color: $colorFondo;
-            margin-top: 50px;
+            margin-top: 30px;
             margin-bottom: 25px;
             font-family: $fuenteContenido;
-            padding-left: 30px;
-            font-size: 20px;
+            padding-left: 10px;
+            font-size: 15px;
             text-align: left;
             line-height: 24px;
             letter-spacing: $interlineadoDeTexto;
+
+            @media (min-width: $bp-med){
+                font-size: 20px;
+                margin-top: 50px;
+                padding-left: 30px;
+            }
         }
     }
     .cursos{
         height: auto;
         @media (min-width: $bp-med){
-            background-image: url(../img/green_background.png);
+            background-image: url(../img/fondoverde.png);
             background-repeat: no-repeat;
             background-size: 200vh;
             height: 2460px;
@@ -556,8 +606,9 @@ main {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            
             background-color: $colorTitulos;
+            margin-top: 3rem;
+           
             @media (min-width: $bp-med){
                 background-color:unset;
                 margin-top: 4rem;
@@ -566,6 +617,7 @@ main {
             @media (min-width: $bp-xl){
                 background-color:unset;
                 margin-top: 2rem;
+                
             }
         
             .infoIzq{
@@ -588,6 +640,7 @@ main {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+
                     @media (min-width: $bp-med){
                         align-items: flex-start;
 
@@ -597,16 +650,16 @@ main {
                         color: $colorFondo;
                         font-family: $fuenteGeneral;
                         font-weight: 600;
-                        font-size: 2rem;
-                        line-height: 70px;
+                        font-size: 1.7rem;
+                        line-height: 50px;
                         text-align: center;
                         letter-spacing: $interlineadoDeTexto;
                         margin-top: 20px;
                         
                         @media (min-width: $bp-med){
                             align-items: flex-start;
-                        
-    
+                            font-size: 2rem;
+                            line-height: 70px;
                         }
 
                         @media (min-width: $bp-1080p){
@@ -622,13 +675,15 @@ main {
                         font-family: $fuenteGeneral;
                         font-weight: normal;
                         line-height: 35px;
-                        letter-spacing: 0.1em;
+                        letter-spacing: 0.04em;
                         text-align: center;
                         padding: 0 1rem;
+                        
                         @media (min-width: $bp-med){
                           width: 90%;
                           text-align: start;
                           padding: 0;
+                          letter-spacing: 0.1em;
     
                         }
                         @media (min-width: $bp-1080p){
@@ -653,7 +708,7 @@ main {
                         letter-spacing: $interlineadoDeTexto;
                         border: none;
                         cursor: pointer;
-                        width: 170px;
+                        width: 150px;
                         height: 60px;
                         margin: 20px 0;
                         display: none;

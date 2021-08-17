@@ -19,99 +19,158 @@
 
 /* bp = breakpoint */
 .tarjeta {
-  width: 400px;
-  height: 650px;
+  width: 300px;
+  height: auto;
   border-radius: 10px;
   border: 3px solid #000027; }
+  @media (min-width: 46.8em) {
+    .tarjeta {
+      width: 400px;
+      height: 650px; } }
   .tarjeta__titulo {
     background-color: #000027;
-    height: 60px;
+    height: 45px;
     box-sizing: border-box;
     display: flex;
     align-items: center; }
+    @media (min-width: 46.8em) {
+      .tarjeta__titulo {
+        height: 60px; } }
     .tarjeta__titulo__texto {
       font-family: "Copper Hewitt", sans-serif;
       color: white;
       font-weight: 400;
-      font-size: 25px;
+      font-size: 20px;
       line-height: 32px;
       padding-left: 15px; }
+      @media (min-width: 46.8em) {
+        .tarjeta__titulo__texto {
+          font-size: 25px;
+          line-height: 32px; } }
     .tarjeta__titulo--negrita {
       font-weight: 600; }
   .tarjeta__contenedorIconos {
     display: flex;
-    height: 90px;
+    height: 70px;
     align-items: center; }
+    @media (min-width: 46.8em) {
+      .tarjeta__contenedorIconos {
+        height: 90px; } }
     .tarjeta__contenedorIconos div {
-      padding-left: 20px;
+      padding-left: 10px;
       display: flex; }
+      @media (min-width: 46.8em) {
+        .tarjeta__contenedorIconos div {
+          padding-left: 20px; } }
       .tarjeta__contenedorIconos div p {
         font-family: "Barlow", sans-serif;
         color: #000027;
-        font-size: 16px;
-        padding-right: 50px;
-        padding-left: 5px;
+        font-size: 12px;
+        padding-right: 10px;
+        padding-left: 20px;
         line-height: 19px;
         letter-spacing: 0.06em; }
+        @media (min-width: 46.8em) {
+          .tarjeta__contenedorIconos div p {
+            font-size: 16px;
+            padding-right: 50px;
+            padding-left: 5px;
+            line-height: 19px; } }
         .tarjeta__contenedorIconos div p span {
           font-weight: 600;
           font-size: 14px;
           line-height: 17px; }
   .tarjeta__body {
-    padding: 0 15px 0px 15px;
+    padding: 0 10px 0px 10px;
     font-family: "Barlow", sans-serif;
-    color: #000027;
-    letter-spacing: 0.06em; }
+    color: #000027; }
+    @media (min-width: 46.8em) {
+      .tarjeta__body {
+        padding: 0 15px 0px 15px;
+        letter-spacing: 0.06em; } }
     .tarjeta__body h3 {
       font-size: 20px;
       line-height: 24px; }
     .tarjeta__body__item, .tarjeta__body__item--modificado {
       margin-left: 20px;
-      font-size: 18px;
-      line-height: 52px;
+      font-size: 16px;
+      line-height: 40px;
       list-style-position: outside; }
+      @media (min-width: 46.8em) {
+        .tarjeta__body__item, .tarjeta__body__item--modificado {
+          font-size: 18px;
+          line-height: 52px; } }
       .tarjeta__body__item--modificado {
         line-height: 24px; }
   .tarjeta__precios {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 20px; }
+    margin-bottom: 10px; }
+    @media (min-width: 46.8em) {
+      .tarjeta__precios {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px; } }
     .tarjeta__precios__item {
       display: flex;
-      width: 160px;
-      height: 40px;
+      width: 100px;
+      height: 30px;
       margin: 15px 15px; }
+      @media (min-width: 46.8em) {
+        .tarjeta__precios__item {
+          width: 160px;
+          height: 40px; } }
       .tarjeta__precios__item__texto {
         font-family: "Barlow", sans-serif;
         font-weight: bold;
-        font-size: 16px;
+        font-size: 13px;
         letter-spacing: 0.06em;
         padding-left: 15px; }
+        @media (min-width: 46.8em) {
+          .tarjeta__precios__item__texto {
+            font-size: 16px; } }
       .tarjeta__precios__item__icono {
         border-radius: 50%;
-        width: 40px;
-        height: 40px; }
+        width: 30px;
+        height: 30px; }
+        @media (min-width: 46.8em) {
+          .tarjeta__precios__item__icono {
+            width: 40px;
+            height: 40px; } }
   .tarjeta__botones {
-    width: 400px;
-    height: 60px;
+    justify-content: space-evenly;
     display: flex;
-    justify-content: space-evenly; }
+    margin: 1rem; }
+    @media (min-width: 46.8em) {
+      .tarjeta__botones {
+        width: 400px;
+        height: 60px;
+        justify-content: space-evenly;
+        margin: 0; } }
     .tarjeta__botones__botonUno, .tarjeta__botones__botonDos {
       background: #000027;
       border-radius: 4px;
-      width: 150px;
+      width: 120px;
       height: 60px;
       color: #Fff;
       font-family: "Barlow", sans-serif;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 15px;
       letter-spacing: 0.06em;
       border: 2px solid #000027;
       cursor: pointer; }
+      @media (min-width: 46.8em) {
+        .tarjeta__botones__botonUno, .tarjeta__botones__botonDos {
+          width: 150px;
+          height: 60px;
+          font-size: 18px; } }
     .tarjeta__botones__botonDos {
-      width: 200px;
+      width: 130px;
       background: none;
       color: #000027; }
+      @media (min-width: 46.8em) {
+        .tarjeta__botones__botonDos {
+          width: 200px; } }
 
 .tarjetaXp {
   margin: 70px 20px;
@@ -558,6 +617,8 @@ header {
         transform: translateY(-8px) rotate(-45deg); }
 
 @media (max-width: 1093px) {
+  header .logo {
+    padding-left: 25px; }
   header .menu {
     position: absolute;
     top: 100px;
@@ -581,17 +642,31 @@ header {
     header nav label span {
       background: #2C96FB; } }
 
+@media only screen and (max-width: 550px) {
+  header {
+    height: 15vh; }
+    header .logo {
+      height: 2.3em; } }
+
 main #presentacion {
   height: 90vh;
   background-color: #000027;
   overflow: hidden; }
+  @media (min-width: 24em) {
+    main #presentacion {
+      height: 85vh; } }
   @media (min-width: 46.8em) {
     main #presentacion {
       height: 70vh;
       background-color: unset;
       background-image: url(../img/fondoPrincipal.png);
       background-size: cover;
-      background-repeat: no-repeat; } }
+      background-repeat: no-repeat;
+      background-position: right; } }
+  @media (min-width: 50em) {
+    main #presentacion {
+      height: 40vh;
+      background-position: center; } }
   @media (min-width: 75em) {
     main #presentacion {
       height: 90vh; } }
@@ -677,6 +752,10 @@ main #presentacion {
       main #presentacion .contenidoPresentacion {
         flex-direction: row;
         height: 100%; } }
+    @media (min-width: 50em) {
+      main #presentacion .contenidoPresentacion {
+        flex-direction: row;
+        height: 80%; } }
     main #presentacion .contenidoPresentacion .textoPresentacion {
       padding-left: 1rem; }
       @media (min-width: 46.8em) {
@@ -690,7 +769,8 @@ main #presentacion {
         main #presentacion .contenidoPresentacion .textoPresentacion {
           padding-left: 10rem;
           height: 70%; } }
-      main #presentacion .contenidoPresentacion .textoPresentacion p {
+      main #presentacion .contenidoPresentacion .textoPresentacion .parrafoPresentacion {
+        padding-top: 4px;
         color: #ffff;
         font-family: "Barlow", sans-serif;
         font-weight: 500;
@@ -698,14 +778,17 @@ main #presentacion {
         letter-spacing: 0.06em;
         font-size: 1.2rem; }
         @media (min-width: 75em) {
-          main #presentacion .contenidoPresentacion .textoPresentacion p {
+          main #presentacion .contenidoPresentacion .textoPresentacion .parrafoPresentacion {
             font-size: 25px; } }
       main #presentacion .contenidoPresentacion .textoPresentacion h1 {
         color: #5DF99C;
         font-family: "Copper Hewitt", sans-serif;
         letter-spacing: 0.05em;
         padding-top: 1rem;
-        font-size: 3rem; }
+        font-size: 2.5rem; }
+        @media (min-width: 24em) {
+          main #presentacion .contenidoPresentacion .textoPresentacion h1 {
+            font-size: 3rem; } }
         @media (min-width: 46.8em) {
           main #presentacion .contenidoPresentacion .textoPresentacion h1 {
             font-size: 2.8rem; } }
@@ -798,34 +881,43 @@ main .tituloCentrado {
   color: #000027; }
   main .tituloCentrado h2 {
     font-style: bold;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600;
     letter-spacing: 0.05em;
     padding-top: 20px; }
     @media (min-width: 46.8em) {
       main .tituloCentrado h2 {
-        padding-top: 0; } }
+        padding-top: 0;
+        font-size: 50px; } }
   main .tituloCentrado__postTitulo {
     font-family: "Barlow", sans-serif;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 36px; }
+    @media (min-width: 46.8em) {
+      main .tituloCentrado__postTitulo {
+        font-size: 25px; } }
   main .tituloCentrado__previoTarjeta {
     color: #000027;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 25px;
     font-family: "Barlow", sans-serif;
-    padding-left: 30px;
-    font-size: 20px;
+    padding-left: 10px;
+    font-size: 15px;
     text-align: left;
     line-height: 24px;
     letter-spacing: 0.06em; }
+    @media (min-width: 46.8em) {
+      main .tituloCentrado__previoTarjeta {
+        font-size: 20px;
+        margin-top: 50px;
+        padding-left: 30px; } }
 
 main .cursos {
   height: auto; }
   @media (min-width: 46.8em) {
     main .cursos {
-      background-image: url(../img/green_background.png);
+      background-image: url(../img/fondoverde.png);
       background-repeat: no-repeat;
       background-size: 200vh;
       height: 2460px;
@@ -869,7 +961,8 @@ main .cursos {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #5DF99C; }
+    background-color: #5DF99C;
+    margin-top: 3rem; }
     @media (min-width: 46.8em) {
       main .cursos__info {
         background-color: unset;
@@ -902,14 +995,16 @@ main .cursos {
           color: #000027;
           font-family: "Copper Hewitt", sans-serif;
           font-weight: 600;
-          font-size: 2rem;
-          line-height: 70px;
+          font-size: 1.7rem;
+          line-height: 50px;
           text-align: center;
           letter-spacing: 0.06em;
           margin-top: 20px; }
           @media (min-width: 46.8em) {
             main .cursos__info .infoIzq__texto__titulo, main .cursos__info .infoDer__texto__titulo {
-              align-items: flex-start; } }
+              align-items: flex-start;
+              font-size: 2rem;
+              line-height: 70px; } }
           @media (min-width: 120em) {
             main .cursos__info .infoIzq__texto__titulo, main .cursos__info .infoDer__texto__titulo {
               font-size: 40px;
@@ -920,14 +1015,15 @@ main .cursos {
           font-family: "Copper Hewitt", sans-serif;
           font-weight: normal;
           line-height: 35px;
-          letter-spacing: 0.1em;
+          letter-spacing: 0.04em;
           text-align: center;
           padding: 0 1rem; }
           @media (min-width: 46.8em) {
             main .cursos__info .infoIzq__texto__parrafo, main .cursos__info .infoDer__texto__parrafo {
               width: 90%;
               text-align: start;
-              padding: 0; } }
+              padding: 0;
+              letter-spacing: 0.1em; } }
           @media (min-width: 120em) {
             main .cursos__info .infoIzq__texto__parrafo, main .cursos__info .infoDer__texto__parrafo {
               margin-right: 150px;
@@ -948,7 +1044,7 @@ main .cursos {
           letter-spacing: 0.06em;
           border: none;
           cursor: pointer;
-          width: 170px;
+          width: 150px;
           height: 60px;
           margin: 20px 0;
           display: none; }

@@ -1,23 +1,38 @@
 .tarjeta{
-    width: 400px;
-    height: 650px;
+    width: 300px;
+    height: auto;
     border-radius: 10px;
     border: 3px solid $colorFondo;
 
+     
+    @media (min-width: $bp-med){
+        width: 400px;
+        height: 650px;
+    }
+
     &__titulo{
         background-color: $colorFondo;
-        height: 60px;
+        height: 45px;
         box-sizing: border-box;
         display: flex;
         align-items: center;
+
+        @media (min-width: $bp-med){
+            height: 60px;
+        }
 
         &__texto{
             font-family: $fuenteGeneral;
             color: white;
             font-weight: 400;
-            font-size: 25px;
+            font-size: 20px;
             line-height: 32px;
             padding-left: 15px;
+
+            @media (min-width: $bp-med){
+                font-size: 25px;
+                line-height: 32px;
+            }
         }
 
         &--negrita{
@@ -26,47 +41,72 @@
     }
     &__contenedorIconos{
         display: flex;
-        height: 90px;
+        height: 70px;
         align-items: center;
-        
+
+        @media (min-width: $bp-med){
+            height: 90px;
+        }
 
         div{
-            padding-left: 20px;
+            padding-left: 10px;
             display: flex;
+
+            @media (min-width: $bp-med){
+                padding-left: 20px;
+            }
 
             p{
                 font-family: $fuenteContenido;
                 color: $colorFondo;
-                font-size: 16px;
-                padding-right: 50px;
-                padding-left: 5px;
+                font-size: 12px;
+                padding-right: 10px;
+                padding-left: 20px;
                 line-height: 19px; 
                 letter-spacing: $interlineadoDeTexto;
+
+                @media (min-width: $bp-med){
+                    font-size: 16px;
+                    padding-right: 50px;
+                    padding-left: 5px;
+                    line-height: 19px; 
+                }
 
                 span{
                     font-weight: 600;
                     font-size: 14px;
                     line-height: 17px;
                 }
+
             }
         }
     }
     &__body{
-        padding:0 15px 0px 15px;
+        padding:0 10px 0px 10px;
         font-family: $fuenteContenido;
         color: $colorFondo;
-        letter-spacing: $interlineadoDeTexto;
+
+        @media (min-width: $bp-med){
+            padding:0 15px 0px 15px;
+            letter-spacing: $interlineadoDeTexto;
+        }
 
         h3{
             font-size: 20px;
             line-height: 24px;
             
         }
+
         &__item{ 
             margin-left: 20px;
-            font-size: 18px;
-            line-height: 52px;
+            font-size: 16px;
+            line-height: 40px;
             list-style-position: outside;
+
+            @media (min-width: $bp-med){
+                font-size: 18px;
+                line-height: 52px;
+            }
 
             &--modificado{
                 @extend .tarjeta__body__item;
@@ -77,56 +117,93 @@
     &__precios{
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+
+        @media (min-width: $bp-med){
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
 
         &__item{
             display: flex;
-            width: 160px;
-            height: 40px;
+            width: 100px;
+            height: 30px;
             margin: 15px 15px;
+
+            @media (min-width: $bp-med){
+                width: 160px;
+                height: 40px;
+            }
 
             &__texto{
                 font-family: $fuenteContenido;
                 font-weight: bold;
-                font-size: 16px;
+                font-size: 13px;
                 letter-spacing: $interlineadoDeTexto;
                 padding-left: 15px;
+
+                @media (min-width: $bp-med){
+                    font-size: 16px;
+                }
             }
 
             &__icono{
                 border-radius: 50%;
-                width: 40px;
-                height: 40px;
+                width: 30px;
+                height: 30px;
+
+                @media (min-width: $bp-med){
+                    width: 40px;
+                    height: 40px;
+                }
             }
         }
 
     }
 
     &__botones{
-        width: 400px;
-        height: 60px;
-        display: flex;
         justify-content: space-evenly;
+        display: flex;
+
+        margin: 1rem;
+
+        @media (min-width: $bp-med){
+            width: 400px;
+            height: 60px;
+            justify-content: space-evenly;
+            margin: 0;
+        }
 
         &__botonUno{
             background: $colorFondo;
             border-radius: 4px;
-            width: 150px;
+            width: 120px;
             height: 60px;
             color: #Fff;
             font-family: $fuenteContenido;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 15px;
             letter-spacing: $interlineadoDeTexto;
             border: 2px solid $colorFondo;
             cursor: pointer;
+
+            @media (min-width: $bp-med){
+                width: 150px;
+                height: 60px;
+                font-size: 18px;
+            }
         }
 
         &__botonDos{
             @extend .tarjeta__botones__botonUno;
-            width: 200px;
+            width: 130px;
             background: none;
             color: $colorFondo;
+
+            @media (min-width: $bp-med){
+                width: 200px;
+            }
         }
     }
 
