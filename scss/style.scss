@@ -225,6 +225,11 @@ main {
             background-position:center;
         }
 
+        @media (min-width: $bp-xl){
+            height: 60vh;
+            
+        }
+
         @media (min-width: $bp-xxl){
             height: 90vh;
         }
@@ -493,10 +498,17 @@ main {
         font-family: Copper Hewitt;
         text-align: center;
         color: $colorFondo;
-    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: $bp-med){
+            display: block;
+        }
+
         h2{
             font-style: bold;
-            font-size: 40px;
+            font-size: 35px;
             font-weight: 600;
             letter-spacing: 0.05em;
             padding-top: 20px;
@@ -509,17 +521,20 @@ main {
         &__postTitulo{
             font-family: $fuenteContenido;
             font-weight: 500;
-            font-size: 20px;
-            line-height: 36px;
+            font-size: 16px;
+            line-height: 30px;
+            width: 90%;
 
             @media (min-width: $bp-med){
                 font-size: 25px;
+                width: 100%;
+                margin-top: 2rem;
             }
         }
 
         &__previoTarjeta{
             color: $colorFondo;
-            margin-top: 30px;
+            margin-top: 20px;
             margin-bottom: 25px;
             font-family: $fuenteContenido;
             padding-left: 10px;
@@ -537,6 +552,7 @@ main {
     }
     .cursos{
         height: auto;
+
         @media (min-width: $bp-med){
             background-image: url(../img/fondoverde.png);
             background-repeat: no-repeat;
@@ -547,6 +563,18 @@ main {
         @media (min-width: $bp-med-2){
             height: auto;
         }
+
+        @media (min-width: $bp-large){
+            background-image: none;
+            
+        }
+
+        @media (min-width: $bp-xl-2){
+            background-image: url(../img/fondoverde.png);
+            
+        }
+
+        
         @media (min-width: $bp-1080p){
             background-size: contain;
         }
@@ -612,11 +640,21 @@ main {
             @media (min-width: $bp-med){
                 background-color:unset;
                 margin-top: 4rem;
+
             }
 
-            @media (min-width: $bp-xl){
+            @media (min-width: $bp-large){
+                background-image: url(../img/fondoverde.png);
+                background-position: right;
+                background-size: cover;
+                background-repeat: no-repeat;
+                
+            }
+            
+            @media (min-width: $bp-xl-2){
                 background-color:unset;
                 margin-top: 2rem;
+                background-image: none;
                 
             }
         
@@ -624,7 +662,7 @@ main {
                 display: flex;
                 flex-direction: column;
                 
-                @media (min-width:$bp-med-2){
+                @media (min-width:$bp-large){
                     flex-direction: row;
                     align-items: center;
                     width: 80%;
@@ -641,7 +679,7 @@ main {
                     flex-direction: column;
                     align-items: center;
 
-                    @media (min-width: $bp-med){
+                    @media (min-width: $bp-large){
                         align-items: flex-start;
 
                     }
@@ -679,7 +717,7 @@ main {
                         text-align: center;
                         padding: 0 1rem;
                         
-                        @media (min-width: $bp-med){
+                        @media (min-width: $bp-large){
                           width: 90%;
                           text-align: start;
                           padding: 0;
@@ -737,7 +775,7 @@ main {
                         border-radius: 10px;
                         margin: 0 5%;
                         
-                        @media (min-width: $bp-med){
+                        @media (min-width: $bp-large){
                             display: block;
                             width: 550px;
                             height: auto;
@@ -761,7 +799,7 @@ main {
                 display: flex;
                 flex-direction: column;
 
-                @media (min-width: $bp-med-2){
+                @media (min-width: $bp-large){
                     flex-direction: row;
                     align-items: flex-start;
                     justify-content: flex-start;
@@ -793,28 +831,36 @@ main {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    @media (min-width: $bp-med){
+                    @media (min-width: $bp-large){
                         align-items: flex-end;
 
                     }
 
                     &__titulo{
                         @extend .infoIzq__texto__titulo;
-                        @media (min-width: $bp-med){
+                       @media (min-width: $bp-med){
                             text-align: right;
 
-                        }
+                        } 
                     }
 
                     &__parrafo{
                         @extend .infoIzq__texto__parrafo;
                         margin-right: 0px;
                         
-                        @media (min-width: $bp-med){
+                        @media (min-width: $bp-large){
+                            text-align: center;
+                            margin-left: 150px;
+                            
+                        }
+
+                        @media (min-width: $bp-large){
                             text-align: right;
                             margin-left: 150px;
                             
                         }
+
+                        
                     }
 
                     &__boton{
@@ -891,38 +937,55 @@ main {
 
     .whatsapp{
         position: fixed;
-        width: 320px;
-        height: 90px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
         background: $colorSubtitulos;
         box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 4px;
-        left: 1560px;
-        top: 860px;
+        left: 75vw;
+        top: 87vh;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        padding: 11px 28px 11px 24px;
+        padding: 10px;
         font-family: $fuenteContenido;
         color: #FFF;
         z-index: 30;
+        cursor: pointer;
+
+        @media (min-width: $bp-med){
+            border-radius: 10px;
+            width: 280px;
+            height: 70px;
+            left: 80vw;
+            top: 90vh;
+            padding: 11px 28px 11px 24px;
+        }
 
         img{
-            width: 67.7px;
-            height: 68px;
+            width: 40px;
+            height: auto;
         }
 
         div{
-            margin-left: 15px;
-            span{
-                font-weight: 500;
-                font-size: 25px;
-                line-height: 30px;
-            }
-            p{
-                font-size: 12px;
-                font-style: italic;
-                line-height: 14px;
-                min-width: 190px;
+           display: none;
+
+            @media (min-width: $bp-med){
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                margin-left: 15px;
+                span{
+                    font-weight: 500;
+                    font-size: 23px;
+                    line-height: 30px;
+                }
+                p{
+                    font-size: 12px;
+                    font-style: italic;
+                    line-height: 14px;
+                    min-width: 190px;
+                }
             }
         }
     }
@@ -933,18 +996,18 @@ main {
 footer{
     background: $colorFondo;
     display: flex;
-    height: auto;
+    height: 100vh;
     flex-direction: column;
     justify-content: center;
     color: #FFF;
     font-family: $fuenteContenido;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: $interlineadoDeTexto;
     line-height: 22px;
     overflow: hidden;
     
     @media (min-width: $bp-1080p){
-        height: 320px;
+        height: 290px;
         flex-direction: row;
     }
     
