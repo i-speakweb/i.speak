@@ -823,7 +823,10 @@ main #presentacion {
         font-family: "Copper Hewitt", sans-serif;
         letter-spacing: 0.05em;
         padding-top: 1rem;
-        font-size: 2.5rem; }
+        font-size: 2.2rem; }
+        @media (min-width: 22rem) {
+          main #presentacion .contenidoPresentacion .textoPresentacion h1 {
+            font-size: 2.5rem; } }
         @media (min-width: 24em) {
           main #presentacion .contenidoPresentacion .textoPresentacion h1 {
             font-size: 3rem; } }

@@ -365,7 +365,11 @@ main {
                     font-family: $fuenteGeneral;
                     letter-spacing: 0.05em;
                     padding-top: 1rem;
-                    font-size: 2.5rem;
+                    font-size: 2.2rem;
+
+                    @media (min-width: 22rem){
+                        font-size: 2.5rem;
+                    }
 
                     @media (min-width: $bp-small){
                         font-size: 3rem;
