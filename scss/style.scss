@@ -234,8 +234,19 @@ main {
             height: 90vh;
         }
 
+        @media (min-width: $bp-1044p){
+            height: 100vh;
+            background-position-x: 10%;
+        }
+
+        @media (min-width: $bp-1280p){
+            height: 85vh;
+            background-position-x: 7%;
+        }
+
         @media (min-width: $bp-1080p){
             height: 100vh;
+            background-position: center;
         }
 
         .contenidoPresentacion {
@@ -576,6 +587,16 @@ main {
         @media (min-width: $bp-xl-2){
             background-image: url(../img/fondoverde.png);
             
+        }
+
+        @media (min-width: $bp-1280p){
+            background-position: bottom right;
+            background-size: 118%;
+        }
+
+        @media (min-width: $bp-1044p){
+            background-position: bottom;
+            background-size: 100%;
         }
 
         
@@ -1009,8 +1030,8 @@ footer{
     letter-spacing: $interlineadoDeTexto;
     line-height: 22px;
     overflow: hidden;
-    
-    @media (min-width: $bp-1080p){
+
+    @media (min-width: $bp-1280p){
         height: 290px;
         flex-direction: row;
     }
@@ -1024,16 +1045,26 @@ footer{
         flex-direction: column;
         justify-content: space-evenly;
 
-        @media (min-width: $bp-1080p){
-            width: 1720px;
+        @media (min-width: $bp-1280p){
+            width: 1220px;
             justify-content: space-between;
             height: 280px;
             flex-direction: row;
             padding-left: 0;
+            padding-top: 50px;
+        }
+
+        @media (min-width: $bp-1044p){
+            width: 1220px;
+        }
+
+        @media (min-width: $bp-1080p){
+            width: 1720px;
+            padding-top: 80px;
         }
 
         &__redes{
-            @media (min-width: $bp-1080p){
+            @media (min-width: $bp-1280p){
                 width: 350px;
 
             }
@@ -1056,7 +1087,7 @@ footer{
         }
         &__empresa{
             margin-top: 20px;
-            @media (min-width: $bp-1080p){
+            @media (min-width: $bp-1280p){
                 width: 400px;
                 margin-top: 0;
             }
@@ -1067,7 +1098,7 @@ footer{
         }
         &__staff{
             margin-top: 20px;
-            @media (min-width: $bp-1080p){
+            @media (min-width: $bp-1280p){
                 width: 840px;
                 margin-top: 0;
             }

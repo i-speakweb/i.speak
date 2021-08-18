@@ -708,9 +708,18 @@ main #presentacion {
   @media (min-width: 75em) {
     main #presentacion {
       height: 90vh; } }
+  @media (min-width: 90em) {
+    main #presentacion {
+      height: 100vh;
+      background-position-x: 10%; } }
+  @media (min-width: 80em) {
+    main #presentacion {
+      height: 85vh;
+      background-position-x: 7%; } }
   @media (min-width: 120em) {
     main #presentacion {
-      height: 100vh; } }
+      height: 100vh;
+      background-position: center; } }
   main #presentacion .contenidoPresentacion {
     display: flex;
     flex-direction: column;
@@ -981,6 +990,14 @@ main .cursos {
   @media (min-width: 67em) {
     main .cursos {
       background-image: url(../img/fondoverde.png); } }
+  @media (min-width: 80em) {
+    main .cursos {
+      background-position: bottom right;
+      background-size: 118%; } }
+  @media (min-width: 90em) {
+    main .cursos {
+      background-position: bottom;
+      background-size: 100%; } }
   @media (min-width: 120em) {
     main .cursos {
       background-size: contain; } }
@@ -1279,7 +1296,7 @@ footer {
   letter-spacing: 0.06em;
   line-height: 22px;
   overflow: hidden; }
-  @media (min-width: 120em) {
+  @media (min-width: 80em) {
     footer {
       height: 290px;
       flex-direction: row; } }
@@ -1290,14 +1307,22 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly; }
-    @media (min-width: 120em) {
+    @media (min-width: 80em) {
       footer .footer__container {
-        width: 1720px;
+        width: 1220px;
         justify-content: space-between;
         height: 280px;
         flex-direction: row;
-        padding-left: 0; } }
+        padding-left: 0;
+        padding-top: 50px; } }
+    @media (min-width: 90em) {
+      footer .footer__container {
+        width: 1220px; } }
     @media (min-width: 120em) {
+      footer .footer__container {
+        width: 1720px;
+        padding-top: 80px; } }
+    @media (min-width: 80em) {
       footer .footer__container__redes {
         width: 350px; } }
     footer .footer__container__redes p {
@@ -1312,7 +1337,7 @@ footer {
         height: 35px; }
     footer .footer__container__empresa {
       margin-top: 20px; }
-      @media (min-width: 120em) {
+      @media (min-width: 80em) {
         footer .footer__container__empresa {
           width: 400px;
           margin-top: 0; } }
@@ -1320,7 +1345,7 @@ footer {
         padding-top: 20px; }
     footer .footer__container__staff {
       margin-top: 20px; }
-      @media (min-width: 120em) {
+      @media (min-width: 80em) {
         footer .footer__container__staff {
           width: 840px;
           margin-top: 0; } }
