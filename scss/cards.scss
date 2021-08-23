@@ -187,6 +187,10 @@
             letter-spacing: $interlineadoDeTexto;
             border: 2px solid $colorFondo;
             cursor: pointer;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             @media (min-width: $bp-med){
                 width: 150px;
@@ -200,6 +204,10 @@
             width: 130px;
             background: none;
             color: $colorFondo;
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
 
             @media (min-width: $bp-med){
                 width: 200px;

@@ -25,6 +25,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 
     .logo {
         width: auto;
@@ -266,76 +269,6 @@ main {
                     height: 80%;
 
             }
-
-           /* .bandaInferior{
-                display: none;
-                background: $colorTitulos;
-                width: 414px;
-                height: 34px;
-                z-index: 0;
-                mix-blend-mode: exclusion;
-                position: absolute;
-                overflow: hidden;
-
-                @media (min-width: $bp-med){
-                    display: block;
-                    top: 600px;
-                    left: 400px;
-                }
-                @media (min-width: $bp-med-2){
-                    top: 600px;
-                    width: 369px;
-                }
-                @media (orientation:landscape) and (min-width: $bp-xl){
-                    top: 485px;
-                    left: 500px;
-                }
-                @media (min-width:$bp-xxl){
-                    display: block;
-                    left: 600px;
-                    top: 775px;
-                    width: 414px;
-                    height: 34px;  
-                }
-                    
-                @media (min-width: $bp-1080p){
-                    display: block;
-                    left: 1007px;
-                    top: 785px;
-                }
-            }
-            .bandaSuperior{
-                display: none;
-                position: absolute;
-                width: 305px;
-                height: 34px;
-                background: $colorTitulos;
-                overflow: hidden;
-
-                @media (min-width: $bp-med){
-                    display: block;
-                    left: 600px;
-                    top: 320px;    
-                }
-                @media (min-width: $bp-med-2){
-                    top: 320px;
-                    width: 169px;
-                }
-                @media (orientation:landscape) and (min-width: $bp-xl){
-                    left: 855px;
-                    top: 200px;
-                }
-                @media (min-width:$bp-xxl){
-                    display: block;
-                    left: 965px;
-                    top: 270px;
-                }
-                @media (min-width: $bp-1080p){
-                    width: 310px;
-                    left: 1598px;
-                    top: 280px;
-                }
-            }*/
 
             .textoPresentacion {
                 padding-left: 1rem;
@@ -891,7 +824,11 @@ main {
                     &__boton{
                         @extend .infoIzq__texto__boton;
                         margin-bottom: 3rem;
-                        display: block;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+
                     }
                 }
             }
@@ -969,7 +906,6 @@ main {
         box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
         left: 75vw;
         top: 87vh;
-        display: flex;
         justify-content: center;
         align-items: center;
         padding: 10px;
@@ -977,8 +913,11 @@ main {
         color: #FFF;
         z-index: 30;
         cursor: pointer;
-
-        @media (min-width: $bp-med){
+        display: none;
+        
+        
+        @media (min-width: $bp-xl){
+            display: flex;
             border-radius: 10px;
             width: 280px;
             height: 70px;
@@ -987,6 +926,10 @@ main {
             padding: 11px 28px 11px 24px;
         }
 
+        a{
+            text-decoration: none;
+            color: #FFF;
+        }
         img{
             width: 40px;
             height: auto;
@@ -1030,6 +973,10 @@ footer{
     letter-spacing: $interlineadoDeTexto;
     line-height: 22px;
     overflow: hidden;
+
+    @media (min-width:$bp-med-2){
+        height: 700px;
+    }
 
     @media (min-width: $bp-1280p){
         height: 290px;
@@ -1098,7 +1045,12 @@ footer{
         }
         &__staff{
             margin-top: 20px;
+            display: none;
+            @media (min-width:$bp-med-2){
+                display: block;
+            }
             @media (min-width: $bp-1280p){
+                display: block;
                 width: 840px;
                 margin-top: 0;
             }

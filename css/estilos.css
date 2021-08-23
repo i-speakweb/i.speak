@@ -158,7 +158,11 @@
       font-size: 15px;
       letter-spacing: 0.06em;
       border: 2px solid #000027;
-      cursor: pointer; }
+      cursor: pointer;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
       @media (min-width: 46.8em) {
         .tarjeta__botones__botonUno, .tarjeta__botones__botonDos {
           width: 150px;
@@ -167,7 +171,11 @@
     .tarjeta__botones__botonDos {
       width: 130px;
       background: none;
-      color: #000027; }
+      color: #000027;
+      display: flex;
+      text-decoration: none;
+      align-items: center;
+      justify-content: center; }
       @media (min-width: 46.8em) {
         .tarjeta__botones__botonDos {
           width: 200px; } }
@@ -577,6 +585,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   /* Finaliza menu hamburguesa */ }
   header .logo {
     width: auto;
@@ -725,76 +736,7 @@ main #presentacion {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
-    /* .bandaInferior{
-                display: none;
-                background: $colorTitulos;
-                width: 414px;
-                height: 34px;
-                z-index: 0;
-                mix-blend-mode: exclusion;
-                position: absolute;
-                overflow: hidden;
-
-                @media (min-width: $bp-med){
-                    display: block;
-                    top: 600px;
-                    left: 400px;
-                }
-                @media (min-width: $bp-med-2){
-                    top: 600px;
-                    width: 369px;
-                }
-                @media (orientation:landscape) and (min-width: $bp-xl){
-                    top: 485px;
-                    left: 500px;
-                }
-                @media (min-width:$bp-xxl){
-                    display: block;
-                    left: 600px;
-                    top: 775px;
-                    width: 414px;
-                    height: 34px;  
-                }
-                    
-                @media (min-width: $bp-1080p){
-                    display: block;
-                    left: 1007px;
-                    top: 785px;
-                }
-            }
-            .bandaSuperior{
-                display: none;
-                position: absolute;
-                width: 305px;
-                height: 34px;
-                background: $colorTitulos;
-                overflow: hidden;
-
-                @media (min-width: $bp-med){
-                    display: block;
-                    left: 600px;
-                    top: 320px;    
-                }
-                @media (min-width: $bp-med-2){
-                    top: 320px;
-                    width: 169px;
-                }
-                @media (orientation:landscape) and (min-width: $bp-xl){
-                    left: 855px;
-                    top: 200px;
-                }
-                @media (min-width:$bp-xxl){
-                    display: block;
-                    left: 965px;
-                    top: 270px;
-                }
-                @media (min-width: $bp-1080p){
-                    width: 310px;
-                    left: 1598px;
-                    top: 280px;
-                }
-            }*/ }
+    height: 100vh; }
     @media (min-width: 46.8em) {
       main #presentacion .contenidoPresentacion {
         flex-direction: row;
@@ -1203,7 +1145,10 @@ main .cursos {
               margin-left: 150px; } }
         main .cursos__info .infoDer__texto__boton {
           margin-bottom: 3rem;
-          display: block; }
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none; }
 
 main .experiencias {
   background: #000027;
@@ -1247,22 +1192,26 @@ main .whatsapp {
   box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
   left: 75vw;
   top: 87vh;
-  display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
   font-family: "Barlow", sans-serif;
   color: #FFF;
   z-index: 30;
-  cursor: pointer; }
-  @media (min-width: 46.8em) {
+  cursor: pointer;
+  display: none; }
+  @media (min-width: 60em) {
     main .whatsapp {
+      display: flex;
       border-radius: 10px;
       width: 280px;
       height: 70px;
       left: 80vw;
       top: 90vh;
       padding: 11px 28px 11px 24px; } }
+  main .whatsapp a {
+    text-decoration: none;
+    color: #FFF; }
   main .whatsapp img {
     width: 40px;
     height: auto; }
@@ -1296,6 +1245,9 @@ footer {
   letter-spacing: 0.06em;
   line-height: 22px;
   overflow: hidden; }
+  @media (min-width: 48em) {
+    footer {
+      height: 700px; } }
   @media (min-width: 80em) {
     footer {
       height: 290px;
@@ -1344,9 +1296,14 @@ footer {
       footer .footer__container__empresa p {
         padding-top: 20px; }
     footer .footer__container__staff {
-      margin-top: 20px; }
+      margin-top: 20px;
+      display: none; }
+      @media (min-width: 48em) {
+        footer .footer__container__staff {
+          display: block; } }
       @media (min-width: 80em) {
         footer .footer__container__staff {
+          display: block;
           width: 840px;
           margin-top: 0; } }
       footer .footer__container__staff__columnas {

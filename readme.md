@@ -3,13 +3,28 @@
 
 Sitio web de iSpeak
 
-## -- Update 1.0 (RC)
+### -- Update 1.1 (RC)
+- Se cambian algunas cuestiones de responsive en tablets.
+- Se cambian logos de empresas.
+- Se agregan links funcionales al index
+    - Se agrega metodos de contacto de whatsapp
+    - Se agregan documentos de planes de estudio
+    - Se agrega link interno del index
+    - Se agregan links de redes sociales
+- Se agrega Favicon
+- Se deja header en `position: sticky;`
+- Se soluciona problema de overlapping con z-index en header en responsive.
+- Se cambian el footer en mobile.
+- Se añade info en footer.
+- Se agregan los cursos faltantes en cards de cursos.
+
+
+### -- Update 1.0 (RC)
 - Se trabaja en el responsive de la sección blog y noticia extendida
 - Se agrega flecha para volver hacia atrás en la noticia extendida
 - Se achican tamaños de textos en general de la sección principal
 
-
-## -- Update 0.9 (beta)
+### -- Update 0.9 (beta)
 - Se trabaja en el responsive cambiando algunos elementos y eliminando otros.
 
 ### -- Update 0.8 (beta)
