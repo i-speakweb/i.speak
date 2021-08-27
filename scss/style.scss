@@ -14,6 +14,7 @@
 html{
     scroll-behavior: smooth;
     
+    
 }
 // ------------ Header -------------- //
 
@@ -544,7 +545,7 @@ main {
                 position: absolute;
                 width: 200px;
                 height: 800px;
-                top: 0px;
+                
                 z-index: 20;
                 
                 @media (min-width: $bp-med){
@@ -1046,6 +1047,7 @@ footer{
         &__staff{
             margin-top: 20px;
             display: none;
+            visibility: hidden;
             @media (min-width:$bp-med-2){
                 display: block;
             }

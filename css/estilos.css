@@ -949,7 +949,6 @@ main .cursos {
       position: absolute;
       width: 200px;
       height: 800px;
-      top: 0px;
       z-index: 20; }
       @media (min-width: 46.8em) {
         main .cursos__contenedor .opacity_ruler1, main .cursos__contenedor .opacity_ruler2 {
@@ -1297,7 +1296,8 @@ footer {
         padding-top: 20px; }
     footer .footer__container__staff {
       margin-top: 20px;
-      display: none; }
+      display: none;
+      visibility: hidden; }
       @media (min-width: 48em) {
         footer .footer__container__staff {
           display: block; } }

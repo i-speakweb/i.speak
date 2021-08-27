@@ -3,6 +3,13 @@
 
 Sitio web de iSpeak
 
+## -- Update 1.2 (RELEASE)
+- Se arregla problema con swiper (debido a actualización de la librería)
+- Se completa el contenido de los cursos, precios e información general.
+- Se oculta información faltante de Staff en footer.
+- Se realiza optimización SEO basica en todas las páginas.
+- Se prepara sitio para deployment final.
+
 ### -- Update 1.1 (RC)
 - Se cambian algunas cuestiones de responsive en tablets.
 - Se cambian logos de empresas.
