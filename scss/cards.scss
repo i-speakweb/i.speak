@@ -204,10 +204,9 @@
             width: 130px;
             background: none;
             color: $colorFondo;
-            display: flex;
+            text-align: center;
             text-decoration: none;
-            align-items: center;
-            justify-content: center;
+            
 
             @media (min-width: $bp-med){
                 width: 200px;

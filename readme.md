@@ -3,7 +3,10 @@
 
 Sitio web de iSpeak
 
-## -- Versión 1.1.1 (HotFix 1)
+## -- Versión 1.1.2 (HotFix 2)
+- Se soluciona problema de alineación en un botón de card.
+
+### -- Versión 1.1.1 (HotFix 1)
 - Se arregla glitch visual en cards con poco texto e interlineado erroneo en dispositivos mobiles.
 
 ### -- Update 1.1 (RELEASE)

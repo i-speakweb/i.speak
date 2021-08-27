@@ -172,10 +172,8 @@
       width: 130px;
       background: none;
       color: #000027;
-      display: flex;
-      text-decoration: none;
-      align-items: center;
-      justify-content: center; }
+      text-align: center;
+      text-decoration: none; }
       @media (min-width: 46.8em) {
         .tarjeta__botones__botonDos {
           width: 200px; } }
