@@ -947,10 +947,12 @@ main .cursos {
       position: absolute;
       width: 200px;
       height: 800px;
+      display: none;
       z-index: 20; }
       @media (min-width: 46.8em) {
         main .cursos__contenedor .opacity_ruler1, main .cursos__contenedor .opacity_ruler2 {
-          background: linear-gradient(to right, white, transparent 10%); } }
+          background: linear-gradient(to right, white, transparent 10%);
+          display: block; } }
       @media (min-width: 75em) {
         main .cursos__contenedor .opacity_ruler1, main .cursos__contenedor .opacity_ruler2 {
           background: linear-gradient(to right, white, transparent 90%); } }
@@ -1182,8 +1184,6 @@ main .experiencias {
 
 main .whatsapp {
   position: fixed;
-  width: 70px;
-  height: 70px;
   border-radius: 50%;
   background: #2C96FB;
   box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
@@ -1195,10 +1195,11 @@ main .whatsapp {
   font-family: "Barlow", sans-serif;
   color: #FFF;
   z-index: 30;
-  cursor: pointer;
-  display: none; }
-  @media (min-width: 60em) {
+  cursor: pointer; }
+  @media (min-width: 67em) {
     main .whatsapp {
+      width: 70px;
+      height: 70px;
       display: flex;
       border-radius: 10px;
       width: 280px;
@@ -1214,7 +1215,7 @@ main .whatsapp {
     height: auto; }
   main .whatsapp div {
     display: none; }
-    @media (min-width: 46.8em) {
+    @media (min-width: 67em) {
       main .whatsapp div {
         display: flex;
         flex-direction: column;
